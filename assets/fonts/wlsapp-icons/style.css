@@ -1,0 +1,325 @@
+@font-face {
+  font-family: 'wlsapp-icons';
+  src:  url('fonts/wlsapp-icons.eot?v316g6');
+  src:  url('fonts/wlsapp-icons.eot?v316g6#iefix') format('embedded-opentype'),
+    url('fonts/wlsapp-icons.ttf?v316g6') format('truetype'),
+    url('fonts/wlsapp-icons.woff?v316g6') format('woff'),
+    url('fonts/wlsapp-icons.svg?v316g6#wlsapp-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'wlsapp-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-notification-line:before {
+  content: "\e91d";
+  color: #4c5577;
+}
+.icon-business-man:before {
+  content: "\ea69";
+  color: #4c5577;
+}
+.icon-chat-bubble-circle-question-mark:before {
+  content: "\eb2d";
+  color: #4c5577;
+}
+.icon-chat-bubble-square-question-mark:before {
+  content: "\eb51";
+  color: #4c5577;
+}
+.icon-chat-bubble-square-smiley:before {
+  content: "\eb56";
+  color: #4c5577;
+}
+.icon-messages-line:before {
+  content: "\eb5d";
+  color: #4c5577;
+}
+.icon-contact-book-1:before {
+  content: "\ec08";
+  color: #4c5577;
+}
+.icon-content-view-column:before {
+  content: "\ec46";
+  color: #4c5577;
+}
+.icon-content-view-content:before {
+  content: "\ec47";
+  color: #4c5577;
+}
+.icon-email-envelope:before {
+  content: "\ed33";
+  color: #4c5577;
+}
+.icon-fence-caution:before {
+  content: "\ed89";
+  color: #4c5577;
+}
+.icon-flash-refresh:before {
+  content: "\ef58";
+  color: #4c5577;
+}
+.icon-flash:before {
+  content: "\ef5a";
+  color: #4c5577;
+}
+.icon-hide:before {
+  content: "\f072";
+  color: #4c5577;
+}
+.icon-lock-12:before {
+  content: "\f1d0";
+  color: #4c5577;
+}
+.icon-lock-2:before {
+  content: "\f1d1";
+  color: #4c5577;
+}
+.icon-lock-22:before {
+  content: "\f1d2";
+  color: #4c5577;
+}
+.icon-lock-3:before {
+  content: "\f1d3";
+  color: #4c5577;
+}
+.icon-lock-unlock-1:before {
+  content: "\f1d5";
+  color: #4c5577;
+}
+.icon-lock-unlock-2:before {
+  content: "\f1d6";
+  color: #4c5577;
+}
+.icon-lock-unlock-3:before {
+  content: "\f1d7";
+  color: #4c5577;
+}
+.icon-logout-1:before {
+  content: "\f1de";
+  color: #4c5577;
+}
+.icon-mobile-phone-1:before {
+  content: "\f1fc";
+  color: #4c5577;
+}
+.icon-network-business:before {
+  content: "\f2de";
+  color: #4c5577;
+}
+.icon-network-global:before {
+  content: "\f2ed";
+  color: #4c5577;
+}
+.icon-organization-network:before {
+  content: "\f323";
+  color: #4c5577;
+}
+.icon-paperplane:before {
+  content: "\f339";
+  color: #4c5577;
+}
+.icon-pen-brush:before {
+  content: "\f348";
+  color: #4c5577;
+}
+.icon-safety-buoy:before {
+  content: "\f476";
+  color: #4c5577;
+}
+.icon-settings-1:before {
+  content: "\f4d9";
+  color: #4c5577;
+}
+.icon-space-rocket:before {
+  content: "\f608";
+  color: #4c5577;
+}
+.icon-tag-1:before {
+  content: "\f686";
+  color: #4c5577;
+}
+.icon-tag-2:before {
+  content: "\f687";
+  color: #4c5577;
+}
+.icon-tag-double-1:before {
+  content: "\f68e";
+  color: #4c5577;
+}
+.icon-tag-double-2:before {
+  content: "\f68f";
+  color: #4c5577;
+}
+.icon-user-add:before {
+  content: "\f755";
+  color: #4c5577;
+}
+.icon-user-group-conversation:before {
+  content: "\f776";
+  color: #4c5577;
+}
+.icon-user-home2:before {
+  content: "\f792";
+  color: #4c5577;
+}
+.icon-user-shield-1:before {
+  content: "\f7a1";
+  color: #4c5577;
+}
+.icon-alarm2:before {
+  content: "\f8c3";
+  color: #4c5577;
+}
+.icon-chat-bubble-circle-question-mark2:before {
+  content: "\e908";
+  color: #4c5577;
+}
+.icon-chat-bubble-square-question-mark2:before {
+  content: "\e909";
+  color: #4c5577;
+}
+.icon-chat-bubble-square-smiley2:before {
+  content: "\e90a";
+  color: #4c5577;
+}
+.icon-chat-bubbles-square2:before {
+  content: "\e900";
+  color: #4c5577;
+}
+.icon-email-envelope2:before {
+  content: "\e901";
+  color: #4c5577;
+}
+.icon-hide2:before {
+  content: "\e907";
+  color: #4c5577;
+}
+.icon-lock-14:before {
+  content: "\f8c4";
+  color: #4c5577;
+}
+.icon-lock-24:before {
+  content: "\f8c6";
+  color: #4c5577;
+}
+.icon-lock-23:before {
+  content: "\f8c7";
+  color: #4c5577;
+}
+.icon-lock-32:before {
+  content: "\f8c8";
+  color: #4c5577;
+}
+.icon-lock-unlock-12:before {
+  content: "\f8ca";
+  color: #4c5577;
+}
+.icon-lock-unlock-22:before {
+  content: "\f8cb";
+  color: #4c5577;
+}
+.icon-lock-unlock-32:before {
+  content: "\f8cc";
+  color: #4c5577;
+}
+.icon-mobile-phone-12:before {
+  content: "\e902";
+  color: #4c5577;
+}
+.icon-safety-buoy2:before {
+  content: "\e90b";
+  color: #4c5577;
+}
+.icon-tag-12:before {
+  content: "\e903";
+  color: #4c5577;
+}
+.icon-tag-22:before {
+  content: "\e904";
+  color: #4c5577;
+}
+.icon-tag-double-12:before {
+  content: "\e905";
+  color: #4c5577;
+}
+.icon-tag-double-22:before {
+  content: "\e906";
+  color: #4c5577;
+}
+.icon-google-plus:before {
+  content: "\ea8b";
+}
+.icon-google-plus2:before {
+  content: "\ea8c";
+}
+.icon-google-plus3:before {
+  content: "\ea8d";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-telegram:before {
+  content: "\ea95";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-vk:before {
+  content: "\ea98";
+}
+.icon-sina-weibo:before {
+  content: "\ea9a";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-twitch:before {
+  content: "\ea9f";
+}
+.icon-vimeo:before {
+  content: "\eaa0";
+}
+.icon-vimeo2:before {
+  content: "\eaa1";
+}
+.icon-behance:before {
+  content: "\eaa8";
+}
+.icon-behance2:before {
+  content: "\eaa9";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-pinterest:before {
+  content: "\ead1";
+}
+.icon-pinterest2:before {
+  content: "\ead2";
+}

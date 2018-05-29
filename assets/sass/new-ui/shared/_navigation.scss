@@ -1,0 +1,58 @@
+// /*--------------------------------------------------------------
+// ## Links
+// --------------------------------------------------------------*/
+
+
+// /*--------------------------------------------------------------
+// ## Profil & top Menus
+// --------------------------------------------------------------*/
+#header .bubble {
+    background: $color__red;
+}
+.header-colors {
+
+	a {
+		&:hover, &:hover span, &:hover i, &:hover i:before {
+			color: $color__primary1;
+		}
+		&.open-submenu:hover {
+			color: $color__white;
+		}
+	}
+}
+.basic-menu {
+	
+	.has-submenu {
+		
+		.submenu {
+			
+			li {
+
+				a {
+
+					&:hover {
+						color: $color__primary1;
+						background-color: rgba(0,0,0,0.1);
+						@include transition-all(0.4s);
+					}
+				}
+				&:last-child {
+
+					a {
+						color: $color__red;
+					}
+				}
+			}
+		}
+	}
+}
+
+.menu-list {
+	> li {
+		> a {
+			span {
+				font-weight: 600;
+			}
+		}
+	}
+}

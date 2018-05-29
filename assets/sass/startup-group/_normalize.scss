@@ -1,0 +1,205 @@
+html {
+	// overflow: hidden;
+	// position: absolute;
+	// right: -15px;
+}
+body.page-transition {
+	#sidemenu-wrapper {
+		display: none;
+	}
+	#page-wrapper {
+		padding-left: 0;
+		padding-top: 0;
+	}
+	#header.header-colors {
+		display: none;
+	}
+	.slaask-button {
+		display: none;
+	}
+	#buddypress {
+		/* HEADER GROUP */
+		div#item-header-wrap {
+		    background: transparent;
+		    
+		    div#item-header {
+		    	-webkit-box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+	    	    -moz-box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+	    	    box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+	    	    -webkit-border-radius: 6px;
+	    	    -moz-border-radius: 6px;
+	    	    border-radius: 6px;
+	    	    color: rgba(0, 0, 0, 0.87);
+	    	    background: #fff;
+	    	    margin-bottom: 20px;
+	    	    margin-left: 10px;
+	    	    margin-right: 10px;
+
+				.profile-cover-inner {
+			        display: none;
+			    }
+			    div#item-header-content {
+			    	padding-top: 5px;
+			    	padding-bottom: 0;
+
+			    	h3.group-type {
+			    		margin-bottom: 5px;
+			    	}
+				    div#item-meta {
+				    	margin-top: 10px;
+
+				    	div#item-buttons {
+							width: 49%;
+				    		display: inline-block;
+				    		float: none;
+
+				    		div.group-button {
+				    			width: 100%;
+				    			margin: 0;
+
+				    			a {
+				    				width: 100%;
+				    				height: 44px;
+				    				line-height: 27px;
+				    			}
+				    		}
+				    	}
+				    	div.group-subscription-div {
+				    		width: 49%;
+				    		display: inline-block;
+				    		vertical-align: top;
+
+				    		a {
+				    			border: solid 2px rgba(11, 12, 30, 1);
+
+				    			&:hover {
+				    				border: none;
+				    			}
+				    		}
+				    	}
+				    	div.group-subscription-options {
+				    		width: 100%;
+				    	}
+				    }
+				}
+			    span.highlight {
+			        color: #0b0c1e;
+			        margin-bottom: 10px;
+			        text-align: right;
+			    }
+			    h3.group-type {
+			    	color: #0b0c1e;
+			    	position: absolute;
+			    	top: -30px;
+			    	left: 10px;
+			    }
+			    span.activity {
+			        color: #0b0c1e;
+			        position: absolute;
+			        top: -27px;
+			        right: 100px;
+			    }
+			    h2 {
+			        display: none;
+			    }
+			    div.generic-button a {
+			        background: rgba(11, 12, 30, 1);
+
+			        &:hover {
+			        	background: rgba(11, 12, 30, 0.7);
+			        }
+			    }
+			    div#item-actions h3 {
+			        color: #0b0c1e;
+			    }
+			}
+		}
+		// Group main nav
+		div#item-nav {
+		    border-bottom: none;
+		    -webkit-box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+    	    -moz-box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+    	    box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+    	    -webkit-border-radius: 6px;
+    	    -moz-border-radius: 6px;
+    	    border-radius: 6px;
+    	    color: rgba(0, 0, 0, 0.87);
+    	    background: #232346;
+    	    margin-left: 10px;
+    	    margin-right: 10px;
+		}
+		div#object-nav.item-list-tabs {
+			white-space: normal;
+
+			ul {
+				margin-bottom: 0;
+				overflow-x: unset;
+
+				li > a {
+				    color: rgba(255, 255, 255, 0.8);
+				    padding-top: 7px;
+				    padding-bottom: 7px;
+
+				    span {
+				        color: #0b0c1e;
+					    background: rgba(255, 255, 255, 0.8);
+					    line-height: 1.7;
+				    }
+				}
+				li > a:hover {
+					color: rgba(255, 255, 255, 1);
+
+					span {
+						color: #0b0c1e;
+						background: rgba(255, 255, 255, 1);
+					}
+				}
+				li > a:active {
+					color: rgba(255, 255, 255, 1);
+				}
+				li.current a {
+					color: rgba(255, 255, 255, 1);
+					background: transparent;
+
+					span {
+						color: #0b0c1e;
+						background: rgba(255, 255, 255, 1);
+					}
+				}
+				li.more {
+					display: none;
+				}
+			}
+		}
+		// Group logo
+		div#item-header-avatar {
+			display: none;
+		} /* /END HEADER GROUP */
+
+		/* BODY GROUP */
+		div#item-body {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			margin-left: 10px;
+			margin-right: 10px;
+
+			div#subnav {
+				ul {
+				    -webkit-box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+		    	    -moz-box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+		    	    box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+		    	    -webkit-border-radius: 6px;
+		    	    -moz-border-radius: 6px;
+		    	    border-radius: 6px;
+		    	    color: rgba(0, 0, 0, 0.87);
+		    	    background: #fff;
+		    	    width: 100%;
+
+		    	    li.groups-members-search form label {
+		    	    	margin: 10px;
+		    	    }
+				}
+			}
+		} /* /END BODY GROUP */
+	}
+}

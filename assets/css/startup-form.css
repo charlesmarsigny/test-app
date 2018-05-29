@@ -1,0 +1,1145 @@
+@charset "UTF-8";
+/*
+Theme Name: 	App weLikeStartup (BuddyApp Child)
+Theme URI: 		http://weulikestartup.io/
+Author: 		Guillaume Dubois
+Author URI: 	http://welikestartup.io/
+Description: 	form to create a startup
+Template:       new-startup
+Tags:  			form, startup, new
+License: 		GNU General Public License
+License 		URI: license.txt
+*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+html {
+  margin: 0px;
+  padding: 0px;
+  height: 100%; }
+  html .page-template-new-startup, html .page-template-new-startup #page-wrapper {
+    min-height: 100%;
+    height: auto;
+    margin: 0px; }
+    html .page-template-new-startup .vc_row.wpb_row.vc_row-fluid, html .page-template-new-startup #page-wrapper .vc_row.wpb_row.vc_row-fluid {
+      margin-left: 0px;
+      margin-right: 0px; }
+    html .page-template-new-startup #page-wrapper {
+      padding-top: 60px; }
+    html .page-template-new-startup .acf-fc-popup, html .page-template-new-startup #page-wrapper .acf-fc-popup {
+      width: 480px; }
+      html .page-template-new-startup .acf-fc-popup.-bottom, html .page-template-new-startup #page-wrapper .acf-fc-popup.-bottom {
+        margin-top: 8px; }
+      html .page-template-new-startup .acf-fc-popup ul, html .page-template-new-startup #page-wrapper .acf-fc-popup ul {
+        padding: 0;
+        text-align: left;
+        letter-spacing: -0.31em;
+        text-rendering: optimizespeed;
+        font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; }
+        html .page-template-new-startup .acf-fc-popup ul li, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li {
+          display: inline-block;
+          border-right: none;
+          border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+          border-right: solid 1px rgba(255, 255, 255, 0.1);
+          width: 50%;
+          height: 40px;
+          letter-spacing: normal;
+          word-spacing: normal;
+          text-rendering: auto;
+          font-family: 'Open Sans', sans-serif; }
+          html .page-template-new-startup .acf-fc-popup ul li:first-child a, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li:first-child a {
+            -webkit-border-radius: 0 0 0 0;
+            -moz-border-radius: 0 0 0 0;
+            border-radius: 0 0 0 0; }
+          html .page-template-new-startup .acf-fc-popup ul li:last-child a, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li:last-child a {
+            -webkit-border-radius: 0 0 0 0;
+            -moz-border-radius: 0 0 0 0;
+            border-radius: 0 0 0 0; }
+          html .page-template-new-startup .acf-fc-popup ul li a, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a {
+            height: 40px;
+            padding: 11px 10px 10px 44px;
+            -webkit-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            -ms-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out; }
+            html .page-template-new-startup .acf-fc-popup ul li a:hover, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a:hover, html .page-template-new-startup .acf-fc-popup ul li a:focus, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a:focus {
+              background: #2078EE; }
+            html .page-template-new-startup .acf-fc-popup ul li a:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a:before {
+              font-family: 'icomoon', 'FontAwesome';
+              speak: none;
+              font-style: normal;
+              font-weight: normal;
+              font-variant: normal;
+              text-transform: none;
+              line-height: 1;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+              position: absolute;
+              top: 8px;
+              left: 10px;
+              margin-left: 0px;
+              width: 24px;
+              height: 24px;
+              font-size: 24px;
+              line-height: 24px; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=title_section_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=title_section_pitch]:before {
+              content: '\e7a4'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=subtitle_section_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=subtitle_section_pitch]:before {
+              content: '\e6dc'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=text_section_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=text_section_pitch]:before {
+              content: '\e795'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=textwysiwig_section_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=textwysiwig_section_pitch]:before {
+              content: '\e79b'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=image_section_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=image_section_pitch]:before {
+              content: '\e841'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=gallery_section_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=gallery_section_pitch]:before {
+              content: '\e6a8'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=video_section_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=video_section_pitch]:before {
+              content: '\e9a2'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=list_section_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=list_section_pitch]:before {
+              content: '\e650'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=table_section_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=table_section_pitch]:before {
+              content: '\e83b'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=faq_section_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=faq_section_pitch]:before {
+              content: '\e668'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=integration_section_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=integration_section_pitch]:before {
+              content: '\e893'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=kickstarter_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=kickstarter_integration_pitch]:before {
+              content: '\f135'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=ted_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=ted_integration_pitch]:before {
+              content: '\f1ea'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=cloudup_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=cloudup_integration_pitch]:before {
+              content: '\f0ee'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=flickr_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=flickr_integration_pitch]:before {
+              content: '\f16e'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=imgur_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=imgur_integration_pitch]:before {
+              content: '\f03e'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=instagram_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=instagram_integration_pitch]:before {
+              content: '\f16d'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=photobucket_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=photobucket_integration_pitch]:before {
+              content: '\f083'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=issuu_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=issuu_integration_pitch]:before {
+              content: '\f02d'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=scribd_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=scribd_integration_pitch]:before {
+              content: '\f28a'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=slideshare_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=slideshare_integration_pitch]:before {
+              content: '\f1e7'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=speakerdeck_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=speakerdeck_integration_pitch]:before {
+              content: '\f108'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=polldaddy_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=polldaddy_integration_pitch]:before {
+              content: '\f29c'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=meetup_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=meetup_integration_pitch]:before {
+              content: '\f2e0'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=soundcloud_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=soundcloud_integration_pitch]:before {
+              content: '\f1be'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=reverbnation_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=reverbnation_integration_pitch]:before {
+              content: '\f001'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=spotify_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=spotify_integration_pitch]:before {
+              content: '\f1bc'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=mixcloud_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=mixcloud_integration_pitch]:before {
+              content: '\f289'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=reddit_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=reddit_integration_pitch]:before {
+              content: '\f281'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=tumblr_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=tumblr_integration_pitch]:before {
+              content: '\f173'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=twitter_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=twitter_integration_pitch]:before {
+              content: '\f099'; }
+            html .page-template-new-startup .acf-fc-popup ul li a[data-layout=facebook_integration_pitch]:before, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li a[data-layout=facebook_integration_pitch]:before {
+              content: '\f230'; }
+
+.page-template-new-startup .startup-form, html .page-template-new-startup #page-wrapper .startup-form {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* Wysiwyg SCSS */
+  /* Step "Validation" : validation button */
+  /* acf-flexible-content to be placed before .step & .content */
+  /* First menu numbered on the top of page */
+  /* Global content under the step menu */
+  /* Choice of category in "Les bases" step */
+  /* Choice of keywords in "Les bases" step */ }
+  .page-template-new-startup .startup-form ::-webkit-input-placeholder, html .page-template-new-startup #page-wrapper .startup-form ::-webkit-input-placeholder {
+    color: #ccc; }
+  .page-template-new-startup .startup-form :-moz-placeholder, html .page-template-new-startup #page-wrapper .startup-form :-moz-placeholder {
+    color: #ccc; }
+  .page-template-new-startup .startup-form ::-moz-placeholder, html .page-template-new-startup #page-wrapper .startup-form ::-moz-placeholder {
+    color: #ccc; }
+  .page-template-new-startup .startup-form :-ms-input-placeholder, html .page-template-new-startup #page-wrapper .startup-form :-ms-input-placeholder {
+    color: #ccc; }
+  .page-template-new-startup .startup-form input[type="checkbox"], html .page-template-new-startup #page-wrapper .startup-form input[type="checkbox"] {
+    vertical-align: middle;
+    margin: -1px 4px 0 0; }
+  .page-template-new-startup .startup-form div.acf-actions, html .page-template-new-startup #page-wrapper .startup-form div.acf-actions {
+    text-align: center; }
+  .page-template-new-startup .startup-form a.button, html .page-template-new-startup #page-wrapper .startup-form a.button {
+    margin: 5px;
+    padding: 6px 20px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 14px; }
+  .page-template-new-startup .startup-form a:hover, html .page-template-new-startup #page-wrapper .startup-form a:hover, .page-template-new-startup .startup-form a:focus, html .page-template-new-startup #page-wrapper .startup-form a:focus {
+    text-decoration: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+  .page-template-new-startup .startup-form .wp-editor-container, html .page-template-new-startup #page-wrapper .startup-form .wp-editor-container {
+    border: none;
+    border: solid 2px #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+  .page-template-new-startup .startup-form .mce-toolbar-grp, html .page-template-new-startup #page-wrapper .startup-form .mce-toolbar-grp {
+    background-color: transparent; }
+    .page-template-new-startup .startup-form .mce-toolbar-grp button:hover, html .page-template-new-startup #page-wrapper .startup-form .mce-toolbar-grp button:hover {
+      background-color: transparent; }
+  .page-template-new-startup .startup-form .acf-form-submit, html .page-template-new-startup #page-wrapper .startup-form .acf-form-submit {
+    text-align: center; }
+    .page-template-new-startup .startup-form .acf-form-submit input, html .page-template-new-startup #page-wrapper .startup-form .acf-form-submit input {
+      margin: 5px;
+      padding: 6px 20px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      border: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      background-color: #f53053; }
+  .page-template-new-startup .startup-form .acf-flexible-content .acf-fields .acf-field.if-responsive-field, html .page-template-new-startup #page-wrapper .startup-form .acf-flexible-content .acf-fields .acf-field.if-responsive-field {
+    padding: 5px 30px 20px;
+    margin-top: -20px; }
+    .page-template-new-startup .startup-form .acf-flexible-content .acf-fields .acf-field.if-responsive-field .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-flexible-content .acf-fields .acf-field.if-responsive-field .acf-label {
+      display: inline-block;
+      width: initial;
+      margin: 0 20px 0 0; }
+      .page-template-new-startup .startup-form .acf-flexible-content .acf-fields .acf-field.if-responsive-field .acf-label label, html .page-template-new-startup #page-wrapper .startup-form .acf-flexible-content .acf-fields .acf-field.if-responsive-field .acf-label label {
+        font-size: 12px;
+        text-transform: uppercase;
+        position: relative;
+        top: 4px; }
+    .page-template-new-startup .startup-form .acf-flexible-content .acf-fields .acf-field.if-responsive-field .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-flexible-content .acf-fields .acf-field.if-responsive-field .acf-input {
+      display: inline-block;
+      width: initial; }
+  .page-template-new-startup .startup-form .steps ul, html .page-template-new-startup #page-wrapper .startup-form .steps ul {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+    width: 90%;
+    margin: 0 auto 30px;
+    text-align: center; }
+    .page-template-new-startup .startup-form .steps ul li, html .page-template-new-startup #page-wrapper .startup-form .steps ul li {
+      list-style-type: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: montserrat, arial, verdana;
+      float: left;
+      position: relative; }
+      .page-template-new-startup .startup-form .steps ul li a, html .page-template-new-startup #page-wrapper .startup-form .steps ul li a {
+        display: block;
+        color: #fff; }
+        .page-template-new-startup .startup-form .steps ul li a .current-info, html .page-template-new-startup #page-wrapper .startup-form .steps ul li a .current-info, .page-template-new-startup .startup-form .steps ul li a .number, html .page-template-new-startup #page-wrapper .startup-form .steps ul li a .number {
+          display: none; }
+        .page-template-new-startup .startup-form .steps ul li a:before, html .page-template-new-startup #page-wrapper .startup-form .steps ul li a:before {
+          content: counter(step);
+          counter-increment: step;
+          width: 24px;
+          line-height: 24px;
+          display: block;
+          font-size: 14px;
+          color: #333;
+          background: white;
+          border-radius: 3px;
+          margin: 0 auto 5px auto;
+          position: relative;
+          z-index: 5; }
+        .page-template-new-startup .startup-form .steps ul li a:after, html .page-template-new-startup #page-wrapper .startup-form .steps ul li a:after {
+          content: '';
+          width: 100%;
+          height: 2px;
+          background: white;
+          position: absolute;
+          left: -50%;
+          top: 11px;
+          z-index: 1; }
+      .page-template-new-startup .startup-form .steps ul li:first-child a:after, html .page-template-new-startup #page-wrapper .startup-form .steps ul li:first-child a:after {
+        /*connector not needed before the first step*/
+        content: none; }
+      .page-template-new-startup .startup-form .steps ul li.current a:before, html .page-template-new-startup #page-wrapper .startup-form .steps ul li.current a:before {
+        background: #FFBE3D;
+        color: #fff; }
+      .page-template-new-startup .startup-form .steps ul li.current a:after, html .page-template-new-startup #page-wrapper .startup-form .steps ul li.current a:after {
+        background: #2078EE;
+        color: #fff; }
+      .page-template-new-startup .startup-form .steps ul li.done a:before, html .page-template-new-startup #page-wrapper .startup-form .steps ul li.done a:before, .page-template-new-startup .startup-form .steps ul li.done a:after, html .page-template-new-startup #page-wrapper .startup-form .steps ul li.done a:after {
+        background: #2078EE;
+        color: #fff; }
+  .page-template-new-startup .startup-form .content, html .page-template-new-startup #page-wrapper .startup-form .content {
+    position: relative;
+    background: #fff;
+    border: 0 none;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto; }
+    .page-template-new-startup .startup-form .content h2, html .page-template-new-startup #page-wrapper .startup-form .content h2 {
+      text-indent: -10000px;
+      height: 0;
+      margin: 0;
+      padding: 0; }
+    .page-template-new-startup .startup-form .content h3, html .page-template-new-startup #page-wrapper .startup-form .content h3 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #4f4f7b;
+      margin-bottom: 10px; }
+    .page-template-new-startup .startup-form .content .excerpt-form, html .page-template-new-startup #page-wrapper .startup-form .content .excerpt-form {
+      text-align: center;
+      color: #4f4f7b;
+      margin-top: 0; }
+  .page-template-new-startup .startup-form .actions, html .page-template-new-startup #page-wrapper .startup-form .actions {
+    width: 80%;
+    margin: 0 auto 50px; }
+    .page-template-new-startup .startup-form .actions ul, html .page-template-new-startup #page-wrapper .startup-form .actions ul {
+      text-align: center; }
+      .page-template-new-startup .startup-form .actions ul li, html .page-template-new-startup #page-wrapper .startup-form .actions ul li {
+        display: inline-block;
+        line-height: 80px; }
+        .page-template-new-startup .startup-form .actions ul li a, html .page-template-new-startup #page-wrapper .startup-form .actions ul li a {
+          background-color: #2078EE;
+          color: #fff;
+          padding: 15px 30px;
+          -webkit-border-radius: 100px;
+          -moz-border-radius: 100px;
+          border-radius: 100px;
+          -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+          -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: bold;
+          font-family: montserrat; }
+          .page-template-new-startup .startup-form .actions ul li a i, html .page-template-new-startup #page-wrapper .startup-form .actions ul li a i {
+            font-size: 24px;
+            position: relative;
+            top: 5px; }
+          .page-template-new-startup .startup-form .actions ul li a:hover, html .page-template-new-startup #page-wrapper .startup-form .actions ul li a:hover, .page-template-new-startup .startup-form .actions ul li a:focus, html .page-template-new-startup #page-wrapper .startup-form .actions ul li a:focus {
+            background-color: #1569da; }
+        .page-template-new-startup .startup-form .actions ul li.disabled, html .page-template-new-startup #page-wrapper .startup-form .actions ul li.disabled {
+          display: none; }
+        .page-template-new-startup .startup-form .actions ul li:first-child, html .page-template-new-startup #page-wrapper .startup-form .actions ul li:first-child {
+          margin-right: 20px; }
+    .page-template-new-startup .startup-form .actions.acf-soh-target, html .page-template-new-startup #page-wrapper .startup-form .actions.acf-soh-target {
+      width: 12%; }
+  .page-template-new-startup .startup-form .acf-flexible-content .acf-fields .acf-field, html .page-template-new-startup #page-wrapper .startup-form .acf-flexible-content .acf-fields .acf-field {
+    border: none;
+    /* Content of the title field "création de contenu" (1 service web") */ }
+    .page-template-new-startup .startup-form .acf-flexible-content .acf-fields .acf-field > .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-flexible-content .acf-fields .acf-field > .acf-label, .page-template-new-startup .startup-form .acf-flexible-content .acf-fields .acf-field > .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-flexible-content .acf-fields .acf-field > .acf-input {
+      display: block;
+      width: 100%; }
+    .page-template-new-startup .startup-form .acf-flexible-content .acf-fields .acf-field > .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-flexible-content .acf-fields .acf-field > .acf-input {
+      /* Menu popup when you click on the button "ajouter un service" */
+      /* It is these rules that are applied */
+      /* Useless since the update
+						.acf-fc-popup {
+							margin-left: 0 !important;
+							top: 40px;
+							left: 0px;
+							width: 100%;
+
+							&:before {
+							}
+							ul {
+
+								li {
+								    width: 33.33%;
+								    height: 80px;
+
+								    a {
+								    	&:before {
+											font-family: 'FontAwesome';
+										    top: 10px;
+										    left: 50%;
+										    margin-left: -17px;
+										    width: 34px;
+										    height: 34px;
+										    font-size: 34px;
+										    line-height: 34px;
+								    	}
+								    	&[data-layout=kickstarter_integration_pitch]:before {
+								    		content: '\f135';
+								    	}
+								    	&[data-layout=ted_integration_pitch]:before {
+								    		content: '\f1ea';
+								    	}
+								    	&[data-layout=cloudup_integration_pitch]:before {
+								    		content: '\f0ee'; // Official
+								    	}
+								    	&[data-layout=flickr_integration_pitch]:before {
+								    		content: '\f16e'; // Official
+								    	}
+								    	&[data-layout=imgur_integration_pitch]:before {
+								    		content: '\f03e';
+								    	}
+								    	&[data-layout=instagram_integration_pitch]:before {
+								    		content: '\f16d'; // Official
+								    	}
+								    	&[data-layout=photobucket_integration_pitch]:before {
+								    		content: '\f083';
+								    	}
+								    	&[data-layout=issuu_integration_pitch]:before {
+								    		content: '\f02d';
+								    	}
+								    	&[data-layout=scribd_integration_pitch]:before {
+								    		content: '\f28a'; // Official
+								    	}
+								    	&[data-layout=slideshare_integration_pitch]:before {
+								    		content: '\f1e7'; // Official
+								    	}
+								    	&[data-layout=speakerdeck_integration_pitch]:before {
+								    		content: '\f108';
+								    	}
+								    	&[data-layout=polldaddy_integration_pitch]:before {
+								    		content: '\f29c';
+								    	}
+								    	&[data-layout=meetup_integration_pitch]:before {
+								    		content: '\f2e0'; // Official
+								    	}
+								    	&[data-layout=soundcloud_integration_pitch]:before {
+								    		content: '\f1be'; // Official
+								    	}
+								    	&[data-layout=reverbnation_integration_pitch]:before {
+								    		content: '\f001';
+								    	}
+								    	&[data-layout=spotify_integration_pitch]:before {
+								    		content: '\f1bc'; // Official
+								    	}
+								    	&[data-layout=mixcloud_integration_pitch]:before {
+								    		content: '\f289'; // Official
+								    	}
+								    	&[data-layout=reddit_integration_pitch]:before {
+								    		content: '\f281'; // Official
+								    	}
+								    	&[data-layout=tumblr_integration_pitch]:before {
+								    		content: '\f173'; // Official
+								    	}
+								    	&[data-layout=twitter_integration_pitch]:before {
+								    		content: '\f099'; // Official
+								    	}
+								    	&[data-layout=facebook_integration_pitch]:before {
+								    		content: '\f230'; // Official
+								    	}
+								    }
+								}
+							}
+						}
+						/Useless since the update */ }
+  .page-template-new-startup .startup-form .acf-fields, html .page-template-new-startup #page-wrapper .startup-form .acf-fields {
+    /* Content of the field "création de contenu" */ }
+    .page-template-new-startup .startup-form .acf-fields .acf-field, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field {
+      width: 100% !important;
+      min-height: initial !important;
+      border: none;
+      border-top: solid 1px #eee;
+      padding: 20px 30px; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.jei-company, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.jei-company {
+        width: 50% !important;
+        display: inline-block;
+        border-right: solid 1px #eee; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.jei-company div.acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.jei-company div.acf-label {
+          width: 52%; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.jei-company div.acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.jei-company div.acf-input {
+          width: 46%; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.eip-company, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.eip-company {
+        width: 50% !important;
+        display: inline-block; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.eip-company div.acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.eip-company div.acf-label {
+          width: 52%; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.eip-company div.acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.eip-company div.acf-input {
+          width: 46%; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field input[type="text"], html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field input[type="text"], .page-template-new-startup .startup-form .acf-fields .acf-field input[type="number"], html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field input[type="number"], .page-template-new-startup .startup-form .acf-fields .acf-field input[type="url"], html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field input[type="url"], .page-template-new-startup .startup-form .acf-fields .acf-field input[type="email"], html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field input[type="email"], .page-template-new-startup .startup-form .acf-fields .acf-field select, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field select, .page-template-new-startup .startup-form .acf-fields .acf-field textarea, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field textarea {
+        font-weight: 600;
+        color: #4C5577;
+        border: solid 2px #ddd;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        padding: 0 10px;
+        height: 40px; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field input[type="text"]:hover, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field input[type="text"]:hover, .page-template-new-startup .startup-form .acf-fields .acf-field input[type="number"]:hover, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field input[type="number"]:hover, .page-template-new-startup .startup-form .acf-fields .acf-field input[type="url"]:hover, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field input[type="url"]:hover, .page-template-new-startup .startup-form .acf-fields .acf-field input[type="email"]:hover, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field input[type="email"]:hover, .page-template-new-startup .startup-form .acf-fields .acf-field select:hover, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field select:hover, .page-template-new-startup .startup-form .acf-fields .acf-field textarea:hover, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field textarea:hover {
+        border-color: #ccc;
+        outline: none; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field input[type="text"]:focus, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field input[type="text"]:focus, .page-template-new-startup .startup-form .acf-fields .acf-field input[type="number"]:focus, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field input[type="number"]:focus, .page-template-new-startup .startup-form .acf-fields .acf-field input[type="url"]:focus, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field input[type="url"]:focus, .page-template-new-startup .startup-form .acf-fields .acf-field input[type="email"]:focus, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field input[type="email"]:focus, .page-template-new-startup .startup-form .acf-fields .acf-field select:focus, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field select:focus, .page-template-new-startup .startup-form .acf-fields .acf-field textarea:focus, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field textarea:focus {
+        border-color: #2078EE;
+        outline: none; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field input[type="url"], html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field input[type="url"] {
+        padding-left: 32px; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field textarea, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field textarea {
+        overflow: hidden !important;
+        resize: vertical !important;
+        display: block;
+        padding: 10px; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field input[type="text"].search, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field input[type="text"].search {
+        background-color: #fff;
+        border: none; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field .acf-url .acf-icon.small, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field .acf-url .acf-icon.small {
+        line-height: 32px;
+        left: 10px; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field .acf-radio-list li, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field .acf-radio-list li {
+        font-size: 14px;
+        font-weight: 600; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field .acf-repeater .acf-table tr:nth-child(even) td.acf-row-handle, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field .acf-repeater .acf-table tr:nth-child(even) td.acf-row-handle {
+        background-color: #f4f4f4; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field .acf-repeater .acf-table tr, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field .acf-repeater .acf-table tr {
+        border-bottom: solid 1px #dfdfdf; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field .acf-repeater .acf-table td.acf-row-handle, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field .acf-repeater .acf-table td.acf-row-handle {
+        min-width: 25px; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field .acf-repeater .acf-table a.acf-icon.-plus.small, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field .acf-repeater .acf-table a.acf-icon.-plus.small {
+        left: 5px; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field .acf-repeater .acf-table a.acf-icon.-minus.small, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field .acf-repeater .acf-table a.acf-icon.-minus.small {
+        left: 5px; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-image .acf-image-uploader .hide-if-value, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-image .acf-image-uploader .hide-if-value {
+        border: dashed 2px #AAA;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        font-size: 14px; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-image .acf-image-uploader .hide-if-value p, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-image .acf-image-uploader .hide-if-value p {
+          height: 50px;
+          position: relative;
+          top: 35%; }
+          .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-image .acf-image-uploader .hide-if-value p a, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-image .acf-image-uploader .hide-if-value p a {
+            display: block;
+            width: 200px;
+            line-height: 20px;
+            margin: 0 auto; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-image.acf-field-587f82af0094f .show-if-value, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-image.acf-field-587f82af0094f .show-if-value {
+        position: relative;
+        left: 50%;
+        margin-left: -75px; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-image.acf-field-587f82af0094f .hide-if-value, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-image.acf-field-587f82af0094f .hide-if-value {
+        height: 220px;
+        width: 220px;
+        position: relative;
+        left: 50%;
+        margin-left: -110px; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-image.acf-field-587f844700950 .hide-if-value, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-image.acf-field-587f844700950 .hide-if-value {
+        height: 200px; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field > .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field > .acf-label {
+        display: inline-block;
+        width: 24%; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field > .acf-label label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field > .acf-label label {
+          font-size: 16px; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field > .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field > .acf-input {
+        display: inline-block;
+        width: 75%;
+        /* Menu popup when you click on the button "ajouter un élément" */
+        /* It is these rules that are applied */
+        /* Useless since the update
+					.acf-fc-popup {
+						margin-left: 0 !important;
+						top:40px;
+						left: 0px;
+						width: 100%;
+
+						&:before {
+						}
+						ul {
+							padding: 0;
+							text-align: left;
+							// Kill inline whitspace
+							letter-spacing: -0.31em;
+							text-rendering: optimizespeed;
+							font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+
+							li {
+							    display: inline-block;
+							    border-right: solid 1px rgba(255,255,255,0.1);
+							    border-bottom: solid 1px rgba(255,255,255,0.1);
+							    width: 20%;
+							    height: 80px;
+							    // Recover normal whitespace
+							    letter-spacing: normal;
+							    word-spacing: normal;
+							    text-rendering: auto;
+							    font-family: 'Open Sans', sans-serif;
+
+							    a {
+							    	height: 30px;
+							    	padding: 50px 0 30px;
+							    	@include transition-all(0.2s);
+
+							    	&:hover, &:focus {
+							    		background: $color__blue;
+							    	}
+							    	&:before {
+										font-family: 'icomoon';
+									    speak: none;
+									    font-style: normal;
+									    font-weight: normal;
+									    font-variant: normal;
+									    text-transform: none;
+									    line-height: 1;
+									    -webkit-font-smoothing: antialiased;
+									    -moz-osx-font-smoothing: grayscale;
+									    position: absolute;
+									    top: 10px;
+									    left: 50%;
+									    margin-left: -17px;
+									    width: 34px;
+									    height: 34px;
+									    font-size: 34px;
+									    line-height: 34px;
+							    	}
+							    	&[data-layout=title_section_pitch]:before {
+							    		content: '\e7a4';
+							    	}
+							    	&[data-layout=subtitle_section_pitch]:before {
+							    		content: '\e6dc';
+							    	}
+							    	&[data-layout=text_section_pitch]:before {
+							    		content: '\e795';
+							    	}
+							    	&[data-layout=textwysiwig_section_pitch]:before {
+							    		content: '\e79b';
+							    	}
+							    	&[data-layout=image_section_pitch]:before {
+							    		content: '\e841';
+							    	}
+							    	&[data-layout=gallery_section_pitch]:before {
+							    		content: '\e6a8';
+							    	}
+							    	&[data-layout=video_section_pitch]:before {
+							    		content: '\e9a2';
+							    	}
+							    	&[data-layout=list_section_pitch]:before {
+							    		content: '\e650';
+							    	}
+							    	&[data-layout=table_section_pitch]:before {
+							    		content: '\e83b';
+							    	}
+							    	&[data-layout=faq_section_pitch]:before {
+							    		content: '\e668';
+							    	}
+							    	&[data-layout=integration_section_pitch]:before {
+							    		content: '\e893';
+							    	}
+							    }
+							}
+						}
+					}
+					/Useless since the update */ }
+        .page-template-new-startup .startup-form .acf-fields .acf-field > .acf-input .acf-oembed .canvas, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field > .acf-input .acf-oembed .canvas {
+          display: none; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field > .acf-input .acf-oembed.has-value .canvas, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field > .acf-input .acf-oembed.has-value .canvas {
+          display: block; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field > .acf-input .acf-fc-layout-controlls, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field > .acf-input .acf-fc-layout-controlls {
+          /* Menu popup when you click on button + */
+          /* Useless since the update
+						.acf-fc-popup {
+							margin-left: auto !important;
+							top: 24px;
+							left: -79.5%;
+							width: auto;
+
+							&:before {
+							}
+							ul {
+								padding: 0;
+								text-align: left;
+								// Kill inline whitspace
+								letter-spacing: -0.31em;
+								text-rendering: optimizespeed;
+								font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+
+								li {
+								    display: block;
+								    border-right: none;
+								    border-bottom: solid 1px rgba(255,255,255,0.1);
+								    width: 100%;
+								    height: 40px;
+								    // Recover normal whitespace
+								    letter-spacing: normal;
+								    word-spacing: normal;
+								    text-rendering: auto;
+								    font-family: 'Open Sans', sans-serif;
+
+								    &:first-child a {
+								    	@include border-radius(5px 5px 0 0);
+								    }
+								    &:last-child a {
+								    	@include border-radius(0 0 5px 5px);
+								    }
+								    a {
+								    	height: 40px;
+								    	padding: 11px 10px 10px 44px;
+								    	@include transition-all(0.2s);
+										
+								    	&:hover, &:focus {
+								    		background: $color__blue;
+								    	}
+								    	&:before {
+											font-family: 'icomoon';
+										    speak: none;
+										    font-style: normal;
+										    font-weight: normal;
+										    font-variant: normal;
+										    text-transform: none;
+										    line-height: 1;
+										    -webkit-font-smoothing: antialiased;
+										    -moz-osx-font-smoothing: grayscale;
+										    position: absolute;
+										    top: 8px;
+										    left: 10px;
+										    margin-left: 0px;
+										    width: 24px;
+										    height: 24px;
+										    font-size: 24px;
+										    line-height: 24px;
+								    	}
+								    	&[data-layout=title_section_pitch]:before {
+								    		content: '\e7a4';
+								    	}
+								    	&[data-layout=subtitle_section_pitch]:before {
+								    		content: '\e6dc';
+								    	}
+								    	&[data-layout=text_section_pitch]:before {
+								    		content: '\e795';
+								    	}
+								    	&[data-layout=textwysiwig_section_pitch]:before {
+								    		content: '\e79b';
+								    	}
+								    	&[data-layout=image_section_pitch]:before {
+								    		content: '\e841';
+								    	}
+								    	&[data-layout=gallery_section_pitch]:before {
+								    		content: '\e6a8';
+								    	}
+								    	&[data-layout=video_section_pitch]:before {
+								    		content: '\e9a2';
+								    	}
+								    	&[data-layout=list_section_pitch]:before {
+								    		content: '\e650';
+								    	}
+								    	&[data-layout=table_section_pitch]:before {
+								    		content: '\e83b';
+								    	}
+								    	&[data-layout=faq_section_pitch]:before {
+								    		content: '\e668';
+								    	}
+								    	&[data-layout=integration_section_pitch]:before {
+								    		content: '\e893';
+								    	}
+								    }
+								}
+							}
+						}
+						/Useless since the update */ }
+  .page-template-new-startup .startup-form .select2-choice, html .page-template-new-startup #page-wrapper .startup-form .select2-choice {
+    border: none;
+    box-shadow: none;
+    border: solid 2px #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    background-image: none;
+    padding: 5px 10px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #4C5577 !important; }
+    .page-template-new-startup .startup-form .select2-choice .select2-arrow, html .page-template-new-startup #page-wrapper .startup-form .select2-choice .select2-arrow {
+      padding-top: inherit; }
+  .page-template-new-startup .startup-form .select2-choices, html .page-template-new-startup #page-wrapper .startup-form .select2-choices {
+    border: none;
+    box-shadow: none;
+    border: solid 2px #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+    .page-template-new-startup .startup-form .select2-choices input[type="text"].select2-input, html .page-template-new-startup #page-wrapper .startup-form .select2-choices input[type="text"].select2-input {
+      border: none;
+      font-family: 'Open Sans';
+      font-weight: 600;
+      font-size: 14px;
+      color: #4C5577 !important;
+      height: 36px; }
+
+/*--------------------------------------------------------------
+# Media queries
+--------------------------------------------------------------*/
+/* Small screen with max-width */
+@media only screen and (max-width: 767px) {
+  html .page-template-new-startup .acf-fc-popup, html .page-template-new-startup #page-wrapper .acf-fc-popup {
+    width: auto;
+    padding: 0px; }
+    html .page-template-new-startup .acf-fc-popup ul li, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li {
+      display: block;
+      border-right: none;
+      width: 100%; }
+      html .page-template-new-startup .acf-fc-popup ul li:first-child a, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li:first-child a {
+        -webkit-border-radius: 5px 5px 0 0;
+        -moz-border-radius: 5px 5px 0 0;
+        border-radius: 5px 5px 0 0; }
+      html .page-template-new-startup .acf-fc-popup ul li:last-child a, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li:last-child a {
+        -webkit-border-radius: 0 0 5px 5px;
+        -moz-border-radius: 0 0 5px 5px;
+        border-radius: 0 0 5px 5px; }
+  .page-template-new-startup .startup-form .steps ul li, html .page-template-new-startup #page-wrapper .startup-form .steps ul li {
+    font-size: 10px; }
+  .page-template-new-startup .startup-form .content, html .page-template-new-startup #page-wrapper .startup-form .content {
+    margin: 0 auto;
+    width: 90%; }
+  .page-template-new-startup .startup-form .acf-fields .acf-field, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field {
+    padding: 20px 30px;
+    margin: 0 0 10px; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field > .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field > .acf-label {
+      display: block;
+      width: 100%; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field > .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field > .acf-input {
+      display: block;
+      width: 100%; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field > .acf-input .acf-repeater .acf-table a.acf-icon.-plus.small, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field > .acf-input .acf-repeater .acf-table a.acf-icon.-plus.small {
+        left: 5px; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field > .acf-input .acf-repeater .acf-table a.acf-icon.-minus.small, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field > .acf-input .acf-repeater .acf-table a.acf-icon.-minus.small {
+        left: 5px; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field.jei-company, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.jei-company {
+      width: 100% !important;
+      display: block;
+      border-right: none; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.jei-company div.acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.jei-company div.acf-label {
+        width: 100%; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.jei-company div.acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.jei-company div.acf-input {
+        width: 100%; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field.eip-company, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.eip-company {
+      width: 100% !important;
+      display: block; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.eip-company div.acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.eip-company div.acf-label {
+        width: 100%; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.eip-company div.acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.eip-company div.acf-input {
+        width: 100%; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-message, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-message {
+      padding: 20px 30px;
+      margin: 0; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-label, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-label {
+      display: block;
+      width: 100%; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input {
+      display: block;
+      width: 100%; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-input-append, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-input-append, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-input-append, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-input-append {
+        padding: 8px 7px; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater .acf-field-587fb0612f6c7:before, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater .acf-field-587fb0612f6c7:before, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater .acf-field-587fb0612f6c7:before, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater .acf-field-587fb0612f6c7:before {
+        content: "Nom";
+        display: block;
+        padding: 5px 10px;
+        font-weight: 600; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater .acf-field-587fb0852f6c8:before, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater .acf-field-587fb0852f6c8:before, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater .acf-field-587fb0852f6c8:before, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater .acf-field-587fb0852f6c8:before {
+        content: "Nombre de parts";
+        display: block;
+        padding: 5px 10px;
+        font-weight: 600; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater .acf-field-587fb0a22f6c9:before, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater .acf-field-587fb0a22f6c9:before, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater .acf-field-587fb0a22f6c9:before, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater .acf-field-587fb0a22f6c9:before {
+        content: "% détenu";
+        display: block;
+        padding: 5px 10px;
+        font-weight: 600; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater .acf-field-587fb1202f6cb:before, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater .acf-field-587fb1202f6cb:before, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater .acf-field-587fb1202f6cb:before, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater .acf-field-587fb1202f6cb:before {
+        content: "Date";
+        display: block;
+        padding: 5px 10px;
+        font-weight: 600; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater .acf-field-587fb1452f6cc:before, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater .acf-field-587fb1452f6cc:before, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater .acf-field-587fb1452f6cc:before, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater .acf-field-587fb1452f6cc:before {
+        content: "Montant";
+        display: block;
+        padding: 5px 10px;
+        font-weight: 600; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater .acf-field-587fb1582f6cd:before, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater .acf-field-587fb1582f6cd:before, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater .acf-field-587fb1582f6cd:before, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater .acf-field-587fb1582f6cd:before {
+        content: "Prime";
+        display: block;
+        padding: 5px 10px;
+        font-weight: 600; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater .acf-field-587fb16a2f6ce:before, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater .acf-field-587fb16a2f6ce:before, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater .acf-field-587fb16a2f6ce:before, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater .acf-field-587fb16a2f6ce:before {
+        content: "Nominal";
+        display: block;
+        padding: 5px 10px;
+        font-weight: 600; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater .acf-field-587fb1882f6cf:before, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater .acf-field-587fb1882f6cf:before, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater .acf-field-587fb1882f6cf:before, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater .acf-field-587fb1882f6cf:before {
+        content: "Réseau / investisseur";
+        display: block;
+        padding: 5px 10px;
+        font-weight: 600; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table thead, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table thead, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table thead, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table thead {
+        display: none; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table tr:nth-child(even) td.acf-row-handle, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table tr:nth-child(even) td.acf-row-handle, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table tr:nth-child(even) td.acf-row-handle, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table tr:nth-child(even) td.acf-row-handle {
+        background-color: #f4f4f4; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table tr, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table tr, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table tr, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table tr {
+        border-bottom: solid 1px #dfdfdf; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field {
+        padding: 0;
+        margin: 0;
+        display: block;
+        width: 100% !important; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field .acf-input, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field .acf-input {
+          width: 100%; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"], html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"], .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"], html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"] {
+          min-width: 83px;
+          border: none;
+          -webkit-border-radius: 0px !important;
+          -moz-border-radius: 0px !important;
+          border-radius: 0px !important; }
+          .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"].acf-is-appended, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"].acf-is-appended, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"].acf-is-appended, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"].acf-is-appended {
+            text-align: right; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"].hasDatepicker, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"].hasDatepicker, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"].hasDatepicker, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"].hasDatepicker {
+          width: 100%; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="number"], html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="number"], .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="number"], html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="number"] {
+          border: none;
+          -webkit-border-radius: 0px !important;
+          -moz-border-radius: 0px !important;
+          border-radius: 0px !important; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"]:focus, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"]:focus, .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="number"]:focus, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="number"]:focus, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"]:focus, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"]:focus, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="number"]:focus, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="number"]:focus {
+          border: solid 1px #2078EE; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-empty .acf-table thead, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-empty .acf-table thead, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-empty .acf-table thead, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-empty .acf-table thead {
+        display: none; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup {
+      border: solid 2px #eee;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      width: 91% !important;
+      padding: 0;
+      margin: 0 auto 30px;
+      float: none; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field {
+        border: none; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-message, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-message {
+          margin: 0;
+          padding: 10px 20px 0;
+          text-align: center; }
+          .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-message .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-message .acf-label {
+            margin: 0; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-date-picker, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-date-picker, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-text, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-text {
+          margin: 0;
+          padding: 0 20px 20px; }
+          .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-date-picker label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-date-picker label, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-text label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-text label {
+            font-size: 14px;
+            margin: 0; }
+          .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-date-picker > .acf-input .acf-input-append, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-date-picker > .acf-input .acf-input-append, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-text > .acf-input .acf-input-append, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-text > .acf-input .acf-input-append {
+            padding-top: 8px; }
+          .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-date-picker > .acf-input input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-date-picker > .acf-input input, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-text > .acf-input input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-text > .acf-input input {
+            text-align: right; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup.column-end-layout, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup.column-end-layout {
+        border: none; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup:hover, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup:hover, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup:focus, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup:focus {
+      background-color: #eee; }
+  .page-template-new-startup .startup-form .acf-taxonomy-field li, html .page-template-new-startup #page-wrapper .startup-form .acf-taxonomy-field li {
+    display: inline-block;
+    vertical-align: top;
+    width: 32.5%; }
+  .page-template-new-startup .startup-form .acf-taxonomy-field li, html .page-template-new-startup #page-wrapper .startup-form .acf-taxonomy-field li {
+    display: inline-block;
+    vertical-align: top;
+    width: 32.5%; } }
+
+@media only screen and (max-width: 650px) {
+  .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup {
+    width: 89% !important; }
+  .page-template-new-startup .startup-form .acf-taxonomy-field li, html .page-template-new-startup #page-wrapper .startup-form .acf-taxonomy-field li {
+    width: 49%; } }
+
+@media only screen and (max-width: 568px) {
+  .page-template-new-startup .startup-form .steps ul li, html .page-template-new-startup #page-wrapper .startup-form .steps ul li {
+    font-size: 12px; }
+    .page-template-new-startup .startup-form .steps ul li a, html .page-template-new-startup #page-wrapper .startup-form .steps ul li a {
+      color: transparent; }
+    .page-template-new-startup .startup-form .steps ul li.current a, html .page-template-new-startup #page-wrapper .startup-form .steps ul li.current a {
+      color: #fff;
+      white-space: nowrap;
+      text-align: center; }
+  .page-template-new-startup .startup-form .actions, html .page-template-new-startup #page-wrapper .startup-form .actions {
+    width: 90%; }
+  .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup {
+    width: 88% !important; }
+  .page-template-new-startup .startup-form label.acf-basic-uploader > input[type="file"], html .page-template-new-startup #page-wrapper .startup-form label.acf-basic-uploader > input[type="file"] {
+    width: 100%; } }
+
+/* max-width 414px, mobile-only styles */
+@media only screen and (max-width: 414px) {
+  .page-template-new-startup .startup-form .content, html .page-template-new-startup #page-wrapper .startup-form .content {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin: 0 auto;
+    width: 100%; }
+    .page-template-new-startup .startup-form .content .excerpt-form, html .page-template-new-startup #page-wrapper .startup-form .content .excerpt-form {
+      padding: 0 10px; }
+  .page-template-new-startup .startup-form .actions, html .page-template-new-startup #page-wrapper .startup-form .actions {
+    width: 90%; }
+    .page-template-new-startup .startup-form .actions ul li a, html .page-template-new-startup #page-wrapper .startup-form .actions ul li a {
+      padding: 15px 20px;
+      font-size: 12px; }
+  .page-template-new-startup .startup-form .acf-fields .acf-field, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field {
+    padding: 20px; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup {
+      width: 89% !important; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field .acf-input .acf-image-uploader.acf-cf .view.hide-if-value p, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field .acf-input .acf-image-uploader.acf-cf .view.hide-if-value p {
+      height: auto; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field .acf-input .acf-image-uploader.acf-cf .view.hide-if-value p a.acf-button, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field .acf-input .acf-image-uploader.acf-cf .view.hide-if-value p a.acf-button {
+        width: 100%; } }
+
+@media only screen and (max-width: 330px) {
+  .page-template-new-startup .startup-form .acf-taxonomy-field li, html .page-template-new-startup #page-wrapper .startup-form .acf-taxonomy-field li {
+    width: 100%; }
+  .page-template-new-startup .startup-form .acf-taxonomy-field .categorychecklist-holder, html .page-template-new-startup #page-wrapper .startup-form .acf-taxonomy-field .categorychecklist-holder {
+    max-height: 270px; } }
+
+/* Big screen with min-width */
+@media only screen and (min-width: 768px) {
+  .page-template-new-startup, html .page-template-new-startup #page-wrapper {
+    /* Delete padding-left of kleo page-wrapper */ }
+    .page-template-new-startup #page-wrapper, html .page-template-new-startup #page-wrapper #page-wrapper {
+      padding-left: 0px; }
+    .page-template-new-startup .acf-fc-popup, html .page-template-new-startup #page-wrapper .acf-fc-popup {
+      width: 480px; }
+      .page-template-new-startup .acf-fc-popup ul li, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li {
+        border-right: solid 1px rgba(255, 255, 255, 0.1);
+        width: 50%; }
+        .page-template-new-startup .acf-fc-popup ul li:first-child a, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li:first-child a {
+          -webkit-border-radius: 0 0 0 0;
+          -moz-border-radius: 0 0 0 0;
+          border-radius: 0 0 0 0; }
+        .page-template-new-startup .acf-fc-popup ul li:last-child a, html .page-template-new-startup #page-wrapper .acf-fc-popup ul li:last-child a {
+          -webkit-border-radius: 0 0 0 0;
+          -moz-border-radius: 0 0 0 0;
+          border-radius: 0 0 0 0; }
+    .page-template-new-startup .startup-form .content, html .page-template-new-startup #page-wrapper .startup-form .content {
+      margin: 0 auto;
+      width: 90%; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field .acf-label {
+      padding-right: 5px; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-text .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-text .acf-label, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-date-picker .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-date-picker .acf-label, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-select .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-select .acf-label, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-url .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-url .acf-label, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-textarea .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-textarea .acf-label, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-taxonomy .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-taxonomy .acf-label, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-google-map .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-google-map .acf-label {
+      margin-top: 10px; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-label, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-label {
+      display: block;
+      width: 100%; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input {
+      display: block;
+      width: 100%; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-input-append, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-input-append, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-input-append, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-input-append {
+        padding: 8px 7px; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table {
+        overflow-x: auto; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table th.acf-th, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table th.acf-th, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table th.acf-th, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table th.acf-th {
+          font-size: 14px;
+          font-weight: bold;
+          vertical-align: bottom; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table tr:nth-child(even) td.acf-row-handle, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table tr:nth-child(even) td.acf-row-handle, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table tr:nth-child(even) td.acf-row-handle, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table tr:nth-child(even) td.acf-row-handle {
+          background-color: #f4f4f4; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table tr, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table tr, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table tr, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table tr {
+          border-bottom: solid 1px #dfdfdf; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table a.acf-icon.-plus.small, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table a.acf-icon.-plus.small, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table a.acf-icon.-plus.small, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table a.acf-icon.-plus.small {
+          left: 9px; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table a.acf-icon.-minus.small, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table a.acf-icon.-minus.small, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table a.acf-icon.-minus.small, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table a.acf-icon.-minus.small {
+          left: 9px; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field {
+          padding: 0;
+          width: auto !important; }
+          .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field .acf-input, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field .acf-input {
+            width: 100%; }
+          .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"], html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"], .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"], html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"] {
+            min-width: 83px;
+            border: none;
+            -webkit-border-radius: 0px !important;
+            -moz-border-radius: 0px !important;
+            border-radius: 0px !important;
+            border-left: solid 1px #dfdfdf; }
+            .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"].acf-is-appended, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"].acf-is-appended, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"].acf-is-appended, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"].acf-is-appended {
+              text-align: right; }
+          .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"].hasDatepicker, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"].hasDatepicker, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"].hasDatepicker, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="text"].hasDatepicker {
+            width: 90px; }
+          .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="number"], html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="number"], .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="number"], html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-table .acf-table td.acf-field input[type="number"] {
+            border: none;
+            -webkit-border-radius: 0px !important;
+            -moz-border-radius: 0px !important;
+            border-radius: 0px !important;
+            border-left: solid 1px #dfdfdf; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-empty .acf-table thead, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.shareholders > .acf-input .acf-repeater.-empty .acf-table thead, .page-template-new-startup .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-empty .acf-table thead, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.fundraising > .acf-input .acf-repeater.-empty .acf-table thead {
+        display: none; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-message, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-message {
+      height: 60px; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-message > .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-message > .acf-label {
+        width: 100%; }
+    .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup {
+      width: 17% !important;
+      border: none;
+      margin: 0;
+      padding: 0;
+      /* first-child */
+      /* last-child */ }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field {
+        padding: 0;
+        margin: 0;
+        border-right: solid 1px #dfdfdf; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-message, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-message {
+          text-align: center;
+          border: none;
+          height: 30px; }
+          .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-message label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-message label {
+            font-size: 14px; }
+          .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-message > .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-message > .acf-label {
+            width: 100%;
+            margin: 0; }
+          .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-message > .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-message > .acf-input {
+            display: none; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-date-picker > .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-date-picker > .acf-label, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-text > .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-text > .acf-label {
+          display: none; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-date-picker > .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-date-picker > .acf-input, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-text > .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-text > .acf-input {
+          width: 100%; }
+          .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-date-picker > .acf-input .acf-input-append, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-date-picker > .acf-input .acf-input-append, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-text > .acf-input .acf-input-append, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-text > .acf-input .acf-input-append {
+            padding-top: 8px; }
+          .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-date-picker > .acf-input input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-date-picker > .acf-input input, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-text > .acf-input input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-text > .acf-input input {
+            border: none;
+            text-align: right; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-587fb6277393f, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-587fb6277393f, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-587fb75573945, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-587fb75573945, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-587fb7bb7394b, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-587fb7bb7394b, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-587fb80573951, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup .acf-field.acf-field-587fb80573951 {
+          border-bottom: solid 1px #dfdfdf; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb53a7393a, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb53a7393a {
+        width: 45% !important;
+        padding-left: 30px; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb53a7393a .acf-field.acf-field-message > .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb53a7393a .acf-field.acf-field-message > .acf-label {
+          margin-left: 51%;
+          width: 57%; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb53a7393a .acf-field.acf-field-date-picker > .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb53a7393a .acf-field.acf-field-date-picker > .acf-label, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb53a7393a .acf-field.acf-field-text > .acf-label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb53a7393a .acf-field.acf-field-text > .acf-label {
+          display: inline-block;
+          width: 56%;
+          padding: 11px 0 6px 10px;
+          margin: 0;
+          border-left: solid 1px #dfdfdf; }
+          .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb53a7393a .acf-field.acf-field-date-picker > .acf-label label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb53a7393a .acf-field.acf-field-date-picker > .acf-label label, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb53a7393a .acf-field.acf-field-text > .acf-label label, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb53a7393a .acf-field.acf-field-text > .acf-label label {
+            font-size: 14px; }
+        .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb53a7393a .acf-field.acf-field-date-picker > .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb53a7393a .acf-field.acf-field-date-picker > .acf-input, .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb53a7393a .acf-field.acf-field-text > .acf-input, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb53a7393a .acf-field.acf-field-text > .acf-input {
+          display: inline-block;
+          width: 42%;
+          border: none;
+          border-left: solid 1px #dfdfdf; }
+      .page-template-new-startup .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb7ca7394c, html .page-template-new-startup #page-wrapper .startup-form .acf-fields .acf-field.acf-field-columngroup.acf-field-587fb7ca7394c {
+        width: 21% !important;
+        padding-right: 30px; }
+    .page-template-new-startup .startup-form .acf-taxonomy-field li, html .page-template-new-startup #page-wrapper .startup-form .acf-taxonomy-field li {
+      display: inline-block;
+      vertical-align: top;
+      width: 32.5%; } }
+
+@media only screen and (min-width: 900px) {
+  .page-template-new-startup .startup-form .content, html .page-template-new-startup #page-wrapper .startup-form .content {
+    width: 80%; } }
+
+/*# sourceMappingURL=startup-form.css.map */

@@ -1,0 +1,161 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Transition all
+@mixin transition-all($time) {
+    -webkit-transition: all $time ease-out;
+    -moz-transition: all $time ease-out;
+    -o-transition: all $time ease-out;
+    -ms-transition: all $time ease-out;
+    transition: all $time ease-out;
+}
+
+// Box-shadow
+@mixin box-shadow($shadow) {
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+// Box-shadow 2
+@mixin box-shadow2($shadow1, $shadow2) {
+	-webkit-box-shadow: $shadow1, $shadow2;
+	-moz-box-shadow: $shadow1, $shadow2;
+	box-shadow: $shadow1, $shadow2;
+}
+// Box-shadow 3
+@mixin box-shadow3($shadow1, $shadow2, $shadow3) {
+	-webkit-box-shadow: $shadow1, $shadow2, $shadow3;
+	-moz-box-shadow: $shadow1, $shadow2, $shadow3;
+	box-shadow: $shadow1, $shadow2, $shadow3;
+}
+
+// Border-radius
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+// Linear gradient
+@mixin linear-gradient($gcolor1, $gcolor2) {
+	background: -moz-linear-gradient(top,  $gcolor1 0%, $gcolor2 100%);
+	background: -webkit-linear-gradient(top,  $gcolor1 0%, $gcolor2 100%);
+	background: linear-gradient(to bottom,  $gcolor1 0%, $gcolor2 100%);
+}
+
+// top arrow
+@mixin top-arrow($widthArrow, $heightArrow, $colorArrow) {
+	border-top: {
+		style: solid;
+		width: $heightArrow;
+		color: $colorArrow;
+	};
+	border-right: {
+		style: solid;
+		width: $widthArrow/2;
+		color: rgba(0,0,0,0);
+	};
+	border-bottom: 0;
+	border-left: {
+		style: solid;
+		width: $widthArrow/2;
+		color: rgba(0,0,0,0);
+	};
+}
+// right arrow
+@mixin right-arrow($widthArrow, $heightArrow, $colorArrow) {
+	border-top: {
+		style: solid;
+		width: $widthArrow/2;
+		color: rgba(0,0,0,0);
+	};
+	border-right: 0;
+	border-bottom: {
+		style: solid;
+		width: $widthArrow/2;
+		color: rgba(0,0,0,0);
+	};
+	border-left: {
+		style: solid;
+		width: $heightArrow;
+		color: $colorArrow;
+	};
+}
+// bottom arrow
+@mixin bottom-arrow($widthArrow, $heightArrow, $colorArrow) {
+	border-top: 0;
+	border-right: {
+		style: solid;
+		width: $widthArrow/2;
+		color: rgba(0,0,0,0);
+	};
+	border-bottom: {
+		style: solid;
+		width: $heightArrow;
+		color: $colorArrow;
+	};
+	border-left: {
+		style: solid;
+		width: $widthArrow/2;
+		color: rgba(0,0,0,0);
+	};
+}
+// left arrow
+@mixin left-arrow($widthArrow, $heightArrow, $colorArrow) {
+	border-top: {
+		style: solid;
+		width: $widthArrow/2;
+		color: rgba(0,0,0,0);
+	};
+	border-right: {
+		style: solid;
+		width: $heightArrow;
+		color: $colorArrow;
+	};
+	border-bottom: {
+		style: solid;
+		width: $widthArrow/2;
+		color: rgba(0,0,0,0);
+	};
+	border-left: 0;
+}
+
+// Maintain Aspect Ratio
+@mixin aspect-ratio($width, $height) {
+	position: relative;
+	
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: ($height / $width) * 100%;
+	}
+	> .content, iframe, object, embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}

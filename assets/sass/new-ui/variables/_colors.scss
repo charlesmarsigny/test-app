@@ -1,0 +1,65 @@
+$color__primary: #111;
+$color__white: #fff;
+$color__light-grey: #f2f2f2;
+$color__mid-grey: #ccc;
+$color__dark-grey: #666;
+$color__light-black: #444;
+$color__black: #000;
+$color__deepblack: #222;
+$color__darken: #232346;
+$color__darken-more: #1d1d3a;
+$color__green: #00D471;
+$color__red: #f53053;
+$color__blue: #2078EE;
+$color__purple: #6432B4;
+$color__orange: #FF783C;
+$color__yellow: #FFBE3D;
+$color__chambray: #4C5577;
+$color__solitude: #E6EBF1;
+$color__aqua-haze: #EFF3F6;
+
+$color__primary1: $color__blue;
+$color__primary2: $color__red;
+
+$color__background-body: $color__white;
+$color__background-hr: $color__light-grey;
+$color__background-pre: $color__light-grey;
+$color__background-ins: $color__light-grey;
+$color__background-screen: $color__light-grey;
+$color__background-profil-sidebar: $color__primary;
+
+// Main background
+$color__main-bg: $color__solitude;
+
+// Sidebar main menu
+$color__nav-sidebar: $color__chambray;
+$color__nav-sidebar-hover: darken($color__nav-sidebar,20%);
+$color__nav-sidebar-icon: lighten($color__nav-sidebar, 30%);
+$color__nav-sidebar-icon-hover: lighten($color__nav-sidebar, 20%);
+$color__bg-current-nav: $color__chambray;
+$color__bg-hover-nav: rgba(255,255,255,0.7);
+
+// Media queries
+$color__background-mobile-menu: $color__darken;
+$color__background-mobile-menu-icon: $color__white;
+
+$color__text-input: $color__light-black;
+$color__text-input-focus: $color__black;
+$color__text-screen: $color__primary;
+
+$color__background-button: $color__white;
+$color__background-button-hover: $color__light-grey;
+$color__background-button-focus: $color__mid-grey;
+
+$color__link: $color__light-black;
+$color__link-visited: $color__light-black;
+$color__link-hover: $color__primary;
+$color__text-main: $color__dark-grey;
+$color__text-headings: $color__dark-grey;
+
+$color__border-abbr: $color__light-black;
+$color__border-button: $color__mid-grey;
+$color__border-button-hover: $color__light-black;
+$color__border-button-focus: $color__light-black;
+$color__border-input: $color__mid-grey;
+$color__border-input-focus: $color__light-black;

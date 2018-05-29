@@ -1,0 +1,99 @@
+html {
+	// margin: 0px;
+	// padding: 0px;
+	// height: 100%;
+
+	body {
+		// min-height: 100%;
+		// height: auto;
+		// margin: 0px;
+		// background-color: transparent;
+
+		.icon,
+		[class^="icon-"],
+		[class*=" icon-"] {
+			/* use !important to prevent issues with browser extensions that change fonts */
+			font-family: 'wlsapp-icons', 'icomoon' !important;
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+
+			/* Better Font Rendering =========== */
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+	}
+}
+
+table{
+
+		&:not(#wp-calendar) {
+			background: $color__white;
+			border: none;
+			color: $color__darken;
+
+			tr th {
+				font-size: 1.2em;
+			}
+			tr th, tr td {
+				border: none;
+				line-height: 1.6em;
+			}
+			tr td {
+				border-top: 1px solid #ddd;
+				font-size: 14px;
+			}
+	}
+}
+#buddypress {
+	ul#activity-stream.activity-list {
+		> li {
+			.activity-content {
+				.activity-inner,
+				blockquote {
+					p {
+						margin: 0 0 12px 0;
+					}
+				}
+			}
+		}
+	}
+}
+#content p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+label {
+    color: $color__darken;
+}
+// .page-template-create_startup,
+// .page-template-new-startup {
+// 	background-color: $color__darken;
+// }
+.page-template-create_startup {
+	background-color: $color__darken;
+}
+.page-template-new-startup {
+	h2 {
+		color: $color__white;
+		font-weight: bold;
+		font-size: 30px;
+	}
+}
+//  hide element
+.hidden {
+	display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    text-indent: -10000px !important;
+    filter: opacity(0) !important;
+    color: #fff !important;
+    color: rgba(255,255,255,0) !important;
+    color: transparent !important;
+    background: #fff !important;
+    background: rgba(255,255,255,0) !important;
+    background: transparent !important;
+}

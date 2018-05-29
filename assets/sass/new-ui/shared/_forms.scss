@@ -1,0 +1,257 @@
+form {
+	margin-bottom: 20px;
+}
+
+.action-button {
+	margin: 0;
+	display: inline-block;
+	padding-bottom: 3px;
+
+	.submit {
+		position: relative;
+		display: block;
+		text-indent: -10000px;
+		width: 31px;
+		height: 31px;
+		@include border-radius(6px);
+		margin: 0;
+		background-color: $color__blue;
+		@include transition-all(0.3s);
+
+		i {
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			font-size: 20px;
+			color: #FFF;
+			text-indent: initial;
+		}
+		&.edit-button {
+			&:hover, &:focus {
+				background-color: $color__darken;
+			}
+		}
+		&.cancel-button {
+			&:hover, &:focus {
+				background-color: $color__orange;
+			}
+		}
+		&.restore-button {
+			&:hover, &:focus {
+				background-color: $color__green;
+			}
+		}
+		&.delete-button {
+			&:hover, &:focus {
+				background-color: $color__red;
+			}
+		}
+	}
+}
+
+a.button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    background: $color__blue;
+    white-space: normal;
+    display: inline-block;
+    margin-bottom: 20px;
+
+    i {
+    	display: inline-block;
+		margin-right: 6px;
+    }
+}
+a.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+a.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+a.button.active,
+button.active,
+input[type="submit"].active,
+input[type="button"].active {
+    background: #1668d6;
+}
+
+.show-login {
+
+	a.button-connexion {
+		padding: 12px 20px 12px 25px;
+		@include border-radius(100px);
+		background-color: $color__blue;
+		color: $color__white !important;
+		text-transform: uppercase !important;
+
+		i {
+			display: inline;
+			position: relative;
+			top: 2px;
+			left: -5px;
+		}
+	}
+	a.button-connexion:hover {
+		background-color: darken( $color__blue, 10%);			
+	}
+}
+
+// ACF
+.acf-field input[type="text"], input.acf-is-appended {
+	border-radius: initial;
+}
+.acf-input-prepend, .acf-input-append {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 600;
+	height: 20px;
+	padding: 3px 7px;
+	background: none;
+	border: none;
+}
+.acf-input-wrap input {
+	height: 40px;
+}
+.acf-actions li {
+    float: initial;
+    margin-left: 0;
+    text-align: center;
+}
+.acf-field p.description {
+    font-style: italic;
+    color: #777;
+    font-size: 14px;
+}
+.acf-field .char-count {
+    display: inline-block;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 0;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    color: #CCC;
+}
+
+// MS FORM
+#msform {
+	width: 1200px;
+	margin: 0 auto 50px;
+	text-align: center;
+	position: relative;
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+// #msform input, #msform textarea {
+// 	padding: 15px;
+// 	border: 1px solid #ccc;
+// 	border-radius: 3px;
+// 	margin-bottom: 10px;
+// 	width: 100%;
+// 	box-sizing: border-box;
+// 	font-family: montserrat;
+// 	color: #2C3E50;
+// 	font-size: 13px;
+// }
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+	background: $color__blue;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	@include border-radius(100px);
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px $color__blue;
+}
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+	width: 90%;
+	margin: 0 auto 30px;
+
+	li {
+		list-style-type: none;
+		color: white;
+		text-transform: uppercase;
+		font-size: 13px;
+		font-family: montserrat, arial, verdana;
+		width: 20%;
+		float: left;
+		position: relative;
+
+		&:before {
+			content: counter(step);
+			counter-increment: step;
+			width: 24px;
+			line-height: 24px;
+			display: block;
+			font-size: 14px;
+			color: #333;
+			background: white;
+			border-radius: 3px;
+			margin: 0 auto 5px auto;
+			position: relative;
+			z-index: 5;
+		}
+		&:after {
+			content: '';
+			width: 100%;
+			height: 2px;
+			background: white;
+			position: absolute;
+			left: -50%;
+			top: 11px;
+			z-index: 1;
+		}
+		&:first-child:after {
+			/*connector not needed before the first step*/
+			content: none; 
+		}
+		&.active:before,  &.active:after{
+			background: $color__blue;
+			color: white;
+		}
+	}
+}

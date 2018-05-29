@@ -1,0 +1,492 @@
+@import "variables";
+
+@font-face {
+  font-family: 'wlsapp-icons';
+  src:  url('#{$icomoon-font-path}/wlsapp-icons.eot?v316g6');
+  src:  url('#{$icomoon-font-path}/wlsapp-icons.eot?v316g6#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/wlsapp-icons.ttf?v316g6') format('truetype'),
+    url('#{$icomoon-font-path}/wlsapp-icons.woff?v316g6') format('woff'),
+    url('#{$icomoon-font-path}/wlsapp-icons.svg?v316g6#wlsapp-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'wlsapp-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@function unicode($str) {
+  @return unquote("\"") + $str + unquote("\"");
+}
+
+.icon-notification-line {
+  &:before {
+    content: unicode($icon-notification-line);     
+    color: #4c5577;
+  }
+}
+.icon-business-man {
+  &:before {
+    content: unicode($icon-business-man);     
+    color: #4c5577;
+  }
+}
+.icon-chat-bubble-circle-question-mark {
+  &:before {
+    content: unicode($icon-chat-bubble-circle-question-mark);     
+    color: #4c5577;
+  }
+}
+.icon-chat-bubble-square-question-mark {
+  &:before {
+    content: unicode($icon-chat-bubble-square-question-mark);     
+    color: #4c5577;
+  }
+}
+.icon-chat-bubble-square-smiley {
+  &:before {
+    content: unicode($icon-chat-bubble-square-smiley);     
+    color: #4c5577;
+  }
+}
+.icon-messages-line {
+  &:before {
+    content: unicode($icon-messages-line);     
+    color: #4c5577;
+  }
+}
+.icon-contact-book-1 {
+  &:before {
+    content: unicode($icon-contact-book-1);     
+    color: #4c5577;
+  }
+}
+.icon-content-view-column {
+  &:before {
+    content: unicode($icon-content-view-column);     
+    color: #4c5577;
+  }
+}
+.icon-content-view-content {
+  &:before {
+    content: unicode($icon-content-view-content);     
+    color: #4c5577;
+  }
+}
+.icon-email-envelope {
+  &:before {
+    content: unicode($icon-email-envelope);     
+    color: #4c5577;
+  }
+}
+.icon-fence-caution {
+  &:before {
+    content: unicode($icon-fence-caution);     
+    color: #4c5577;
+  }
+}
+.icon-flash-refresh {
+  &:before {
+    content: unicode($icon-flash-refresh);     
+    color: #4c5577;
+  }
+}
+.icon-flash {
+  &:before {
+    content: unicode($icon-flash);     
+    color: #4c5577;
+  }
+}
+.icon-hide {
+  &:before {
+    content: unicode($icon-hide);     
+    color: #4c5577;
+  }
+}
+.icon-lock-12 {
+  &:before {
+    content: unicode($icon-lock-12);     
+    color: #4c5577;
+  }
+}
+.icon-lock-2 {
+  &:before {
+    content: unicode($icon-lock-2);     
+    color: #4c5577;
+  }
+}
+.icon-lock-22 {
+  &:before {
+    content: unicode($icon-lock-22);     
+    color: #4c5577;
+  }
+}
+.icon-lock-3 {
+  &:before {
+    content: unicode($icon-lock-3);     
+    color: #4c5577;
+  }
+}
+.icon-lock-unlock-1 {
+  &:before {
+    content: unicode($icon-lock-unlock-1);     
+    color: #4c5577;
+  }
+}
+.icon-lock-unlock-2 {
+  &:before {
+    content: unicode($icon-lock-unlock-2);     
+    color: #4c5577;
+  }
+}
+.icon-lock-unlock-3 {
+  &:before {
+    content: unicode($icon-lock-unlock-3);     
+    color: #4c5577;
+  }
+}
+.icon-logout-1 {
+  &:before {
+    content: unicode($icon-logout-1);     
+    color: #4c5577;
+  }
+}
+.icon-mobile-phone-1 {
+  &:before {
+    content: unicode($icon-mobile-phone-1);     
+    color: #4c5577;
+  }
+}
+.icon-network-business {
+  &:before {
+    content: unicode($icon-network-business);     
+    color: #4c5577;
+  }
+}
+.icon-network-global {
+  &:before {
+    content: unicode($icon-network-global);     
+    color: #4c5577;
+  }
+}
+.icon-organization-network {
+  &:before {
+    content: unicode($icon-organization-network);     
+    color: #4c5577;
+  }
+}
+.icon-paperplane {
+  &:before {
+    content: unicode($icon-paperplane);     
+    color: #4c5577;
+  }
+}
+.icon-pen-brush {
+  &:before {
+    content: unicode($icon-pen-brush);     
+    color: #4c5577;
+  }
+}
+.icon-safety-buoy {
+  &:before {
+    content: unicode($icon-safety-buoy);     
+    color: #4c5577;
+  }
+}
+.icon-settings-1 {
+  &:before {
+    content: unicode($icon-settings-1);     
+    color: #4c5577;
+  }
+}
+.icon-space-rocket {
+  &:before {
+    content: unicode($icon-space-rocket);     
+    color: #4c5577;
+  }
+}
+.icon-tag-1 {
+  &:before {
+    content: unicode($icon-tag-1);     
+    color: #4c5577;
+  }
+}
+.icon-tag-2 {
+  &:before {
+    content: unicode($icon-tag-2);     
+    color: #4c5577;
+  }
+}
+.icon-tag-double-1 {
+  &:before {
+    content: unicode($icon-tag-double-1);     
+    color: #4c5577;
+  }
+}
+.icon-tag-double-2 {
+  &:before {
+    content: unicode($icon-tag-double-2);     
+    color: #4c5577;
+  }
+}
+.icon-user-add {
+  &:before {
+    content: unicode($icon-user-add);     
+    color: #4c5577;
+  }
+}
+.icon-user-group-conversation {
+  &:before {
+    content: unicode($icon-user-group-conversation);     
+    color: #4c5577;
+  }
+}
+.icon-user-home2 {
+  &:before {
+    content: unicode($icon-user-home2);     
+    color: #4c5577;
+  }
+}
+.icon-user-shield-1 {
+  &:before {
+    content: unicode($icon-user-shield-1);     
+    color: #4c5577;
+  }
+}
+.icon-alarm2 {
+  &:before {
+    content: unicode($icon-alarm2);     
+    color: #4c5577;
+  }
+}
+.icon-chat-bubble-circle-question-mark2 {
+  &:before {
+    content: unicode($icon-chat-bubble-circle-question-mark2);     
+    color: #4c5577;
+  }
+}
+.icon-chat-bubble-square-question-mark2 {
+  &:before {
+    content: unicode($icon-chat-bubble-square-question-mark2);     
+    color: #4c5577;
+  }
+}
+.icon-chat-bubble-square-smiley2 {
+  &:before {
+    content: unicode($icon-chat-bubble-square-smiley2);     
+    color: #4c5577;
+  }
+}
+.icon-chat-bubbles-square2 {
+  &:before {
+    content: unicode($icon-chat-bubbles-square2);     
+    color: #4c5577;
+  }
+}
+.icon-email-envelope2 {
+  &:before {
+    content: unicode($icon-email-envelope2);     
+    color: #4c5577;
+  }
+}
+.icon-hide2 {
+  &:before {
+    content: unicode($icon-hide2);     
+    color: #4c5577;
+  }
+}
+.icon-lock-14 {
+  &:before {
+    content: unicode($icon-lock-14);     
+    color: #4c5577;
+  }
+}
+.icon-lock-24 {
+  &:before {
+    content: unicode($icon-lock-24);     
+    color: #4c5577;
+  }
+}
+.icon-lock-23 {
+  &:before {
+    content: unicode($icon-lock-23);     
+    color: #4c5577;
+  }
+}
+.icon-lock-32 {
+  &:before {
+    content: unicode($icon-lock-32);     
+    color: #4c5577;
+  }
+}
+.icon-lock-unlock-12 {
+  &:before {
+    content: unicode($icon-lock-unlock-12);     
+    color: #4c5577;
+  }
+}
+.icon-lock-unlock-22 {
+  &:before {
+    content: unicode($icon-lock-unlock-22);     
+    color: #4c5577;
+  }
+}
+.icon-lock-unlock-32 {
+  &:before {
+    content: unicode($icon-lock-unlock-32);     
+    color: #4c5577;
+  }
+}
+.icon-mobile-phone-12 {
+  &:before {
+    content: unicode($icon-mobile-phone-12);     
+    color: #4c5577;
+  }
+}
+.icon-safety-buoy2 {
+  &:before {
+    content: unicode($icon-safety-buoy2);     
+    color: #4c5577;
+  }
+}
+.icon-tag-12 {
+  &:before {
+    content: unicode($icon-tag-12);     
+    color: #4c5577;
+  }
+}
+.icon-tag-22 {
+  &:before {
+    content: unicode($icon-tag-22);     
+    color: #4c5577;
+  }
+}
+.icon-tag-double-12 {
+  &:before {
+    content: unicode($icon-tag-double-12);     
+    color: #4c5577;
+  }
+}
+.icon-tag-double-22 {
+  &:before {
+    content: unicode($icon-tag-double-22);     
+    color: #4c5577;
+  }
+}
+.icon-google-plus {
+  &:before {
+    content: unicode($icon-google-plus); 
+  }
+}
+.icon-google-plus2 {
+  &:before {
+    content: unicode($icon-google-plus2); 
+  }
+}
+.icon-google-plus3 {
+  &:before {
+    content: unicode($icon-google-plus3); 
+  }
+}
+.icon-facebook {
+  &:before {
+    content: unicode($icon-facebook); 
+  }
+}
+.icon-facebook2 {
+  &:before {
+    content: unicode($icon-facebook2); 
+  }
+}
+.icon-instagram {
+  &:before {
+    content: unicode($icon-instagram); 
+  }
+}
+.icon-whatsapp {
+  &:before {
+    content: unicode($icon-whatsapp); 
+  }
+}
+.icon-telegram {
+  &:before {
+    content: unicode($icon-telegram); 
+  }
+}
+.icon-twitter {
+  &:before {
+    content: unicode($icon-twitter); 
+  }
+}
+.icon-vk {
+  &:before {
+    content: unicode($icon-vk); 
+  }
+}
+.icon-sina-weibo {
+  &:before {
+    content: unicode($icon-sina-weibo); 
+  }
+}
+.icon-youtube {
+  &:before {
+    content: unicode($icon-youtube); 
+  }
+}
+.icon-twitch {
+  &:before {
+    content: unicode($icon-twitch); 
+  }
+}
+.icon-vimeo {
+  &:before {
+    content: unicode($icon-vimeo); 
+  }
+}
+.icon-vimeo2 {
+  &:before {
+    content: unicode($icon-vimeo2); 
+  }
+}
+.icon-behance {
+  &:before {
+    content: unicode($icon-behance); 
+  }
+}
+.icon-behance2 {
+  &:before {
+    content: unicode($icon-behance2); 
+  }
+}
+.icon-github {
+  &:before {
+    content: unicode($icon-github); 
+  }
+}
+.icon-linkedin {
+  &:before {
+    content: unicode($icon-linkedin); 
+  }
+}
+.icon-pinterest {
+  &:before {
+    content: unicode($icon-pinterest); 
+  }
+}
+.icon-pinterest2 {
+  &:before {
+    content: unicode($icon-pinterest2); 
+  }
+}
+

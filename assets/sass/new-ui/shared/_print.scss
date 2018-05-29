@@ -1,0 +1,78 @@
+@media print {
+	html {
+		background: $color__white;
+		background: rgba(255, 255, 255, 0);
+		background: transparent;
+	}
+	#page-wrapper {
+		padding: 0 !important;
+	}
+	#sidemenu-wrapper,
+	#header,
+	.admin-action-bar,
+	#item-nav,
+	#header-cover-image,
+	.profile-cover-inner,
+	#slaask-button {
+		display: none !important;
+	}
+	#item-header-wrap,
+	.profile-cover-inner,
+	#content {
+		background: none !important;
+	}
+	.item-tab {
+		max-width: none !important;
+	}
+	.single-startup #content.startup .main-content {
+		.card-section,
+		.first-section-pitch,
+		.flexible-content-pitch,
+		.team-members .member-content,
+		.project-content-pitch,
+		.liquidity-content,
+		.intention-content {
+		    box-shadow: none !important;
+		    border: solid 2px #DDD !important;
+		    margin: 20px 0 0 !important;
+		    position: initial !important;
+		    display: block !important;
+		}
+	}
+	.status-bar {
+		box-shadow: none !important;
+		    border: solid 1px #DDD !important;
+	}
+	#item-header-avatar {
+		display: inline-block !important;
+		    margin-right: 20px !important;
+
+		img.avatar {
+			box-shadow: none !important;
+			border: solid 2px #DDD !important;
+		}
+	}
+	#item-header-content {
+		display: inline-block !important;
+    	color: $color__darken !important;
+    	vertical-align: middle !important;
+
+    	h2 {
+    		color: $color__darken !important;
+    	}
+    	.activity {
+    		color: $color__darken !important;
+
+    		&:before {
+    			display: none !important;
+    		}
+    	}
+	}
+	.card-header {
+		box-shadow: none !important;
+		display: inline-block !important;
+	}
+	.item-company {
+		display: initial !important;
+	}
+}

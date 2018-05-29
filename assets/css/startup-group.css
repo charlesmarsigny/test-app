@@ -1,0 +1,186 @@
+/*
+Theme Name: 	App weLikeStartup (BuddyApp Child)
+Theme URI: 		http://welikestartup.io/
+Author: 		Guillaume Dubois
+Author URI: 	http://welikestartup.io/
+Description: 	form to create a startup
+Template:       groupframe
+Tags:  			group, startup, integration
+License: 		GNU General Public License
+License 		URI: license.txt
+*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+body.page-transition #sidemenu-wrapper {
+  display: none; }
+body.page-transition #page-wrapper {
+  padding-left: 0;
+  padding-top: 0; }
+body.page-transition #header.header-colors {
+  display: none; }
+body.page-transition .slaask-button {
+  display: none; }
+body.page-transition #buddypress {
+  /* HEADER GROUP */
+  /* /END HEADER GROUP */
+  /* BODY GROUP */
+  /* /END BODY GROUP */ }
+  body.page-transition #buddypress div#item-header-wrap {
+    background: transparent; }
+    body.page-transition #buddypress div#item-header-wrap div#item-header {
+      -webkit-box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+      -moz-box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+      box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      color: rgba(0, 0, 0, 0.87);
+      background: #fff;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      margin-right: 10px; }
+      body.page-transition #buddypress div#item-header-wrap div#item-header .profile-cover-inner {
+        display: none; }
+      body.page-transition #buddypress div#item-header-wrap div#item-header div#item-header-content {
+        padding-top: 5px;
+        padding-bottom: 0; }
+        body.page-transition #buddypress div#item-header-wrap div#item-header div#item-header-content h3.group-type {
+          margin-bottom: 5px; }
+        body.page-transition #buddypress div#item-header-wrap div#item-header div#item-header-content div#item-meta {
+          margin-top: 10px; }
+          body.page-transition #buddypress div#item-header-wrap div#item-header div#item-header-content div#item-meta div#item-buttons {
+            width: 49%;
+            display: inline-block;
+            float: none; }
+            body.page-transition #buddypress div#item-header-wrap div#item-header div#item-header-content div#item-meta div#item-buttons div.group-button {
+              width: 100%;
+              margin: 0; }
+              body.page-transition #buddypress div#item-header-wrap div#item-header div#item-header-content div#item-meta div#item-buttons div.group-button a {
+                width: 100%;
+                height: 44px;
+                line-height: 27px; }
+          body.page-transition #buddypress div#item-header-wrap div#item-header div#item-header-content div#item-meta div.group-subscription-div {
+            width: 49%;
+            display: inline-block;
+            vertical-align: top; }
+            body.page-transition #buddypress div#item-header-wrap div#item-header div#item-header-content div#item-meta div.group-subscription-div a {
+              border: solid 2px #0b0c1e; }
+              body.page-transition #buddypress div#item-header-wrap div#item-header div#item-header-content div#item-meta div.group-subscription-div a:hover {
+                border: none; }
+          body.page-transition #buddypress div#item-header-wrap div#item-header div#item-header-content div#item-meta div.group-subscription-options {
+            width: 100%; }
+      body.page-transition #buddypress div#item-header-wrap div#item-header span.highlight {
+        color: #0b0c1e;
+        margin-bottom: 10px;
+        text-align: right; }
+      body.page-transition #buddypress div#item-header-wrap div#item-header h3.group-type {
+        color: #0b0c1e;
+        position: absolute;
+        top: -30px;
+        left: 10px; }
+      body.page-transition #buddypress div#item-header-wrap div#item-header span.activity {
+        color: #0b0c1e;
+        position: absolute;
+        top: -27px;
+        right: 100px; }
+      body.page-transition #buddypress div#item-header-wrap div#item-header h2 {
+        display: none; }
+      body.page-transition #buddypress div#item-header-wrap div#item-header div.generic-button a {
+        background: #0b0c1e; }
+        body.page-transition #buddypress div#item-header-wrap div#item-header div.generic-button a:hover {
+          background: rgba(11, 12, 30, 0.7); }
+      body.page-transition #buddypress div#item-header-wrap div#item-header div#item-actions h3 {
+        color: #0b0c1e; }
+  body.page-transition #buddypress div#item-nav {
+    border-bottom: none;
+    -webkit-box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+    -moz-box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+    box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #232346;
+    margin-left: 10px;
+    margin-right: 10px; }
+  body.page-transition #buddypress div#object-nav.item-list-tabs {
+    white-space: normal; }
+    body.page-transition #buddypress div#object-nav.item-list-tabs ul {
+      margin-bottom: 0;
+      overflow-x: unset; }
+      body.page-transition #buddypress div#object-nav.item-list-tabs ul li > a {
+        color: rgba(255, 255, 255, 0.8);
+        padding-top: 7px;
+        padding-bottom: 7px; }
+        body.page-transition #buddypress div#object-nav.item-list-tabs ul li > a span {
+          color: #0b0c1e;
+          background: rgba(255, 255, 255, 0.8);
+          line-height: 1.7; }
+      body.page-transition #buddypress div#object-nav.item-list-tabs ul li > a:hover {
+        color: white; }
+        body.page-transition #buddypress div#object-nav.item-list-tabs ul li > a:hover span {
+          color: #0b0c1e;
+          background: white; }
+      body.page-transition #buddypress div#object-nav.item-list-tabs ul li > a:active {
+        color: white; }
+      body.page-transition #buddypress div#object-nav.item-list-tabs ul li.current a {
+        color: white;
+        background: transparent; }
+        body.page-transition #buddypress div#object-nav.item-list-tabs ul li.current a span {
+          color: #0b0c1e;
+          background: white; }
+      body.page-transition #buddypress div#object-nav.item-list-tabs ul li.more {
+        display: none; }
+  body.page-transition #buddypress div#item-header-avatar {
+    display: none; }
+  body.page-transition #buddypress div#item-body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 10px;
+    margin-right: 10px; }
+    body.page-transition #buddypress div#item-body div#subnav ul {
+      -webkit-box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+      -moz-box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+      box-shadow: rgba(63, 49, 178, 0.1) 0px 2px 4px, rgba(63, 49, 178, 0.03) 0px 8px 14px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      color: rgba(0, 0, 0, 0.87);
+      background: #fff;
+      width: 100%; }
+      body.page-transition #buddypress div#item-body div#subnav ul li.groups-members-search form label {
+        margin: 10px; }
+
+/*--------------------------------------------------------------
+# Media queries
+--------------------------------------------------------------*/
+/* max-width 600px */
+@media only screen and (max-width: 600px) {
+  body.page-transition #buddypress div#item-header-wrap div#item-header span.highlight {
+    text-align: center; }
+  body.page-transition #buddypress div#item-header-wrap div#item-header h3.group-type {
+    position: relative;
+    top: 0;
+    left: 0; }
+  body.page-transition #buddypress div#item-header-wrap div#item-header span.activity {
+    position: relative;
+    top: 0;
+    left: 0; } }
+/* max-width 460px */
+@media only screen and (max-width: 460px) {
+  body.page-transition #buddypress div#item-header-wrap div#item-header {
+    margin-left: 0;
+    margin-right: 0; }
+    body.page-transition #buddypress div#item-header-wrap div#item-header div#item-header-content div#item-meta div#item-buttons {
+      width: 100%; }
+    body.page-transition #buddypress div#item-header-wrap div#item-header div#item-header-content div#item-meta div.group-subscription-div {
+      width: 100%; }
+  body.page-transition #buddypress div#item-header-wrap div#item-nav {
+    margin-left: 0;
+    margin-right: 0; }
+  body.page-transition #buddypress div#item-body {
+    margin-left: 0;
+    margin-right: 0; } }
+
+/*# sourceMappingURL=startup-group.css.map */

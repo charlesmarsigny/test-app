@@ -1,0 +1,197 @@
+#sidemenu-wrapper {
+
+	.sidemenu-inner {
+		// @include box-shadow2(inset 10px -8px 10px $color__darken, inset 0 0 10px rgba(0,0,0,1));
+
+		.sidemenu-main {
+
+			.menu-section {
+				padding: 0 15px;
+
+				.menu-list {
+
+					> li {
+						padding: 0;
+						margin-bottom: 2px;
+
+						&.has-submenu.open {
+							background-color: rgba(0,0,0,0.2);
+							@include border-radius(6px);
+						}
+						&.current, &.current-menu-parent, &.current_page_item {
+							background-color: $color__blue;
+							@include border-radius(6px);
+							@include box-shadow(0 1px 10px rgba(0,0,0,0.2));
+							
+							&.has-submenu.open {
+								background-color: $color__blue;
+							}
+							> a, > a:hover, > a:focus {
+								color: $color__white;
+								opacity: 1;
+								cursor: default;
+								background: none;
+
+								// &:before {
+								// 	content: '';
+								// 	position: absolute;
+								// 	top: 8px;
+								// 	right: 0;
+								// 	display: block;
+								// 	width: 0;
+								// 	height: 0;
+								// 	@include left-arrow(24px, 10px, #EEE);
+								// }
+								> i {
+									opacity: 1;
+									color: $color__white;
+
+									&:before {
+										opacity: 1;
+										color: $color__white;
+									}
+								}
+								span {
+									opacity: 1;
+								}
+							}
+						}
+						> a {
+							padding: 10px 40px 10px 60px;
+							@include transition-all(0.2s);
+							color: rgba(255,255,255,0.6);
+							@include transition-all(0.2s);
+							line-height: normal;
+							font-weight: 600;
+							
+							&:hover, &:focus {
+								color: #fff;
+								background-color: rgba(0,0,0,0.15);
+								@include border-radius(6px);
+
+								> i {
+									color: $color__white;
+
+									&:before {
+										opacity: 1;
+										color: $color__white;
+									}
+								}
+							}
+							> i {
+								top: 8px;
+								left: 20px;
+								opacity: 1;
+								color: rgba(255,255,255,0.6);
+								@include transition-all(0.2s);
+
+								&:before {
+									opacity: 1;
+									color: rgba(255,255,255,0.6);
+								}
+
+							}
+							span {
+								opacity: 1;
+							}
+
+						}
+					}
+					> .has-submenu {
+
+						> a {
+							padding: 10px 40px 10px 60px;
+							color: rgba(255,255,255,0.6);
+							opacity: 1;
+
+							&:hover, &:focus {
+								color: #fff;
+								background-color: rgba(0,0,0,0.15);
+		
+								> i {
+									color: $color__white;
+
+									&:before {
+										opacity: 1;
+										color: $color__white;
+									}
+								}
+							}
+							> i {
+								opacity: 1;
+								color: rgba(255,255,255,0.6);
+
+								&:before {
+									opacity: 1;
+									color: rgba(255,255,255,0.6);
+								}
+							}
+							span {
+								opacity: 1;
+							}
+						}
+						> .submenu {
+							> li {
+								> a {
+									background: none;
+									font-size: 14px;
+									font-weight: 600;
+									padding-left: 2px;
+									line-height: 22px;
+							
+									&:before, &:after {
+										display: none;
+									}
+								}
+								&.side-button {
+									padding-right: 20px;
+
+									a {
+									    border: solid 2px $color__white;
+									    margin: 10px 0 15px 0;
+									    @include border-radius(100px);
+									    color: $color__white;
+									    text-align: center;
+									    text-transform: uppercase;
+									    padding: 4px 0 3px;
+									    font-size: 12px;
+									    font-weight: bold;
+									    @include transition-all(0.2s);
+
+									    &:hover, &:focus {
+									    	background-color: $color__white;
+									    	color: $color__blue;
+									    }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.sidemenu-is-open #sidemenu-wrapper {
+
+	.sidemenu-inner {
+		@include box-shadow(none);
+
+		.sidemenu-main {
+
+			.menu-section {
+				padding: 0 10px;
+
+				.menu-list {
+					> li {
+						> a {
+							> i {
+								left: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

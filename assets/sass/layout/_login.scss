@@ -1,0 +1,43 @@
+/* Setting for connexion modal */
+// background out of modal
+.mfp-bg {
+    background-color: #525F7F;
+    background-color: rgba(82,95,127,.25);
+}
+.kleo-login-wrap {
+	.login-shadow-wrapper {
+		@include box-shadow(0 20px 30px rgba(58, 66, 88, 0.15));
+	    @include border-radius(6px);
+
+	    .before-login-form-wrapper, .login-form-wrapper, .login-create-account-wrapper {
+	        background-color: $color__white;
+	    }
+	}
+	.login-form-wrapper {
+	    background-color: #fff;
+	    box-shadow: 0px 1px 0px rgba(60, 48, 97, 0.1);
+	    @include border-radius(6px 6px 0 0);
+
+	    button.login-button, input[type=submit].login-button {
+	        background-color: #F53053;
+	        @include border-radius(100px);
+	    }
+	}
+	.login-create-account-wrapper {
+	    background-color: #fff;
+	    @include border-radius(0 0 6px 6px);
+	}
+}
+.register {
+	.kleo-login-wrap {
+		.login-form-wrapper {
+			@include border-radius(0 0 6px 6px);
+		}
+		.login-create-account-wrapper{
+			@include border-radius(6px 6px 0 0);
+		}
+	}
+}
+.login-logo img {
+    max-width: 320px;
+}

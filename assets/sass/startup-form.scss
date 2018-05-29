@@ -1,0 +1,23 @@
+/*
+Theme Name: 	App weLikeStartup (BuddyApp Child)
+Theme URI: 		http://weulikestartup.io/
+Author: 		Guillaume Dubois
+Author URI: 	http://welikestartup.io/
+Description: 	form to create a startup
+Template:       new-startup
+Tags:  			form, startup, new
+License: 		GNU General Public License
+License 		URI: license.txt
+*/
+
+
+@import "startup-form/colors";
+@import "startup-form/mixins";
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "startup-form/normalize";
+/*--------------------------------------------------------------
+# Media queries
+--------------------------------------------------------------*/
+@import "startup-form/queries";
